@@ -1,5 +1,280 @@
-@import 'fonts';
-@import 'vars';
-@import 'global';
+@import "fonts";
+@import "vars";
+@import "global";
 
+// header
 
+.header__top {
+    background-color: $lgrey;
+    &-inner {
+        display: flex;
+        justify-content: space-between;
+        height: 100px;
+        align-items: center;
+    }
+}
+.header__logo {
+    margin-left: 7px;
+}
+.header__btn-seller {
+    margin-left: auto;
+    margin-right: 100px;
+}
+.button-seller {
+    font-family: "MyriadPro-Regular", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    padding: 4px 19px;
+    background: $blue;
+    border-radius: 16px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+    &:hover {
+        background-color: $dblue;
+    }
+}
+.header__profile {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 14px;
+    &-info {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.profile{
+    &-avatar {
+    margin-right: 22px;
+        .avatar {
+            width: 50px;
+            height: 50px;
+        }
+    }
+    &-info {
+        align-items: center;
+    }
+    &-name {
+        a {
+            font-family: "MyriadPro-Regular", sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22px;
+            color: $dgrey;
+            padding-top: 5px;
+        }
+    }
+    &-balance {
+        font-family: "MyriadPro-Regular", sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 22px;
+        color: $blue;
+    }
+}
+.header__menu {
+    background-color: #fff;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    min-height: 80px;
+    align-items: center;
+    &__list-item {
+        display: inline-block;
+        & + .menu__list-item {
+            margin-left: 25px;
+        }
+    }
+    &__list-link {
+        @include f500;
+        font-size: 15px;
+        line-height: 42px;
+        color: $dgrey;
+        text-transform: uppercase;
+        border-radius: 14px;
+        padding: 0 4px;
+        transition: all 0.3s;
+        &:hover {
+            box-shadow: 0px 4px 10px 0px rgba(52, 91, 229, 0.18);
+        }
+    }
+}
+.menu__search-form {
+    width: 360px;
+    position: relative;
+    input {
+        border-width: 1px;
+        border-color: rgb(217, 223, 229);
+        border-style: solid;
+        display: block;
+        width: 100%;
+        height: 44px;
+        border-radius: 20px;
+        outline: none;
+        font-size: 15px;
+        line-height: 30px;
+        padding-left: 25px;
+        padding-right: 80px;
+        &::placeholder {
+            color: #898f96;
+        }
+    }
+    button {
+        position: absolute;
+        border: none;
+        background-color: $blue;
+        border-radius: 20px;
+        right: 0;
+        top: 0;
+        width: 70px;
+        height: 44px;
+        outline: none;
+        cursor: pointer;
+        transition: all 0.3s;
+        &:hover {
+            background-color: $dblue;
+        }
+        img {
+            position: absolute;
+            top: 15px;
+            right: 27px;
+        }
+    }
+}
+
+// section slider
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 726px;
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 48, 222, 0.8) 0%,
+        rgba(23, 69, 237, 0.8) 54%,
+        rgba(46, 90, 251, 0.8) 100%
+    );
+    &__inner {
+        padding-top: 150px;
+        padding-bottom: 200px;
+        text-align: center;
+        &-title {
+            font-size: 60px;
+            line-height: 70px;
+            color: #f3f3f8;
+            span {
+                display: inline-block;
+                @include f700;
+            }
+        }
+        &-text {
+            @include f500;
+            font-size: 20px;
+            line-height: 72px;
+            color: #f3f3f8;
+        }
+        &-block {
+            button {
+                margin: 50px 15px 0;
+                font-size: 16px;
+                color: #fff;
+                background: transparent;
+                padding: 20px 38px;
+                border: 1px solid #fff;
+                border-radius: 30px;
+                cursor: pointer;
+                outline: none;
+                transition: all 0.3s;
+                &:hover {
+                    background-color: #fff;
+                    color: $blue;
+                }
+            }
+        }
+    }
+}
+.slider__inner-search-block {
+    position: absolute;
+    max-width: 1140px;
+    width: 100%;
+    height: 135px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    border-radius: 6px;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
+    bottom: -66px;
+    z-index: 7;
+    form {
+        max-width: 810px;
+        width: 100%;
+        display: block;
+        position: relative;
+        input {
+            display: block;
+            width: 100%;
+            height: 55px;
+            padding-left: 30px;
+            padding-right: 220px;
+            border: 1px solid #dcdcdc;
+            border-radius: 4px;
+            outline: none;
+            &::placeholder {
+                color: #555555;
+            }
+        }
+    }
+    button {
+        height: 55px;
+        max-width: 225px;
+        width: 100%;
+        background-color: $blue;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        outline: none;
+        transition: all 0.3s;
+        &:hover {
+            background-color: $dblue;
+        }
+    }
+}
+.category {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-left: 1px solid #dcdcdc;
+    height: 55px;
+    width: 200px;
+    a {
+        display: block;
+        color: #555555;
+        padding-top: 15px;
+        padding-left: 20px;
+        text-align: left;
+    }
+}
+.search-block-shadow {
+    position: absolute;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 135px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+}
+.shadow1 {
+    width: 1110px;
+    bottom: -53px;
+    z-index: 6;
+}
+.shadow2 {
+    width: 1080px;
+    bottom: -40px;
+    z-index: 5;
+}
