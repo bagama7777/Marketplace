@@ -45,9 +45,9 @@
         justify-content: space-between;
     }
 }
-.profile{
+.profile {
     &-avatar {
-    margin-right: 22px;
+        margin-right: 22px;
         .avatar {
             width: 50px;
             height: 50px;
@@ -278,3 +278,187 @@
     bottom: -40px;
     z-index: 5;
 }
+
+// end slider section
+
+// start advantages section
+
+.advantages {
+    background-color: #fff;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        padding-top: 185px;
+        padding-bottom: 120px;
+    }
+    &__item {
+        max-width: 360px;
+        width: 100%;
+        padding: 40px 33px;
+        border-radius: 4px;
+        transition: all 0.3s;
+        &:hover {
+            box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+        }
+        &-images {
+            margin-bottom: 30px;
+        }
+        &-title {
+            font-size: 24px;
+            color: #000;
+            padding-bottom: 20px;
+        }
+        &-text {
+            font-size: 16px;
+            line-height: 30px;
+            color: #000;
+        }
+    }
+}
+
+// end advantages section
+
+// start featured section
+
+.featured {
+    background-color: #eff1f5;
+    
+    &__inner {
+        padding: 120px 0;
+        
+    }
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 32px 30px;
+        background-color: #fff;
+        box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+        border-radius: 4px;
+        margin-bottom: 46px;
+        &-title {
+            font-size: 30px;
+        }
+        &-btn {
+            width: 110px;
+            height: 45px;
+            background-color: #7347c1;
+            border-radius: 25px;
+        }
+    }
+  
+    .slick-arrow{
+        position: absolute;
+        z-index: 15;
+        top: -110px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background: transparent;
+    }
+    .slick-prev {
+        right: 101px;
+    }
+    .slick-next {
+        right: 49px;
+    }
+
+    &__slider {
+        font-size: 0;
+        border-radius: 4px;
+        background-color: #ffffff;
+        box-shadow: 0px 2px 30px 0px rgba(147, 155, 168, 0.1);
+        &-images{
+
+            display: inline-block;
+            vertical-align: middle;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: none;
+            max-width: 555px;
+            width: 100%;
+            min-height: 450px;
+        }
+        &-info{
+
+            display: inline-block;
+            vertical-align: top;
+            font-size: 15px;
+            max-width: 585px;
+            width: 100%;
+            padding: 50px 50px 0 50px; 
+            min-height: 450px;
+        }
+        .info__title{
+            font-size: 24px;
+            @include f500;
+        }
+    }
+}
+
+.info__product{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 15px;
+    &-avatar{
+        width: 30px;
+        height: 30px;
+    }
+    span{
+        margin-left: 9px;
+
+    }
+    &-text{
+        margin-left: 9px;
+    }
+}
+.info__text{
+    font-size: 16px;
+    line-height: 30px;
+    padding-top: 25px;
+    padding-bottom: 30px;
+}
+.info__btn{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 44px;
+    & div + div{
+        margin-left: 7px;
+    }
+    & div{
+        line-height: 30px;
+        color: #868c96;
+        background-color: #f1f3f6;
+        padding: 0 15px;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+}
+.info__footer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 24px 0;
+    border-top: 1px solid #ececec;
+    &-price{
+        @include f500;
+        color: #fff;
+        line-height: 30px;
+        padding: 0 18px;
+        background-color: $blue;
+        border-radius: 15px;
+
+
+    }
+}
+
+// end featured section
+
+
+
+  
+  

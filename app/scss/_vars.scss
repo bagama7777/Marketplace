@@ -4,6 +4,11 @@ $dblue: #0050a7;
 $dgrey: #333333;
 
 
+@mixin f400 {
+    font-family: 'Quicksand-Regular', sans-serif;
+    font-weight: 400;
+}
+
 @mixin f500 {
     font-family: 'Quicksand-Medium', sans-serif;
     font-weight: 500;
