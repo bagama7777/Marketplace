@@ -2,19 +2,20 @@ $lgrey: #eef1f3;
 $blue: #0674ec;
 $dblue: #0050a7;
 $dgrey: #333333;
+$width: 130px;
 
 
 @mixin f400 {
-    font-family: 'Quicksand-Regular', sans-serif;
+    font-family: 'Quicksand-Regular';
     font-weight: 400;
 }
 
 @mixin f500 {
-    font-family: 'Quicksand-Medium', sans-serif;
+    font-family: 'Quicksand-Medium';
     font-weight: 500;
 }
 
 @mixin f700 {
-    font-family: 'Quicksand-Bold', sans-serif;
+    font-family: 'Quicksand-Bold';
     font-weight: 700;
 }

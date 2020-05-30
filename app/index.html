@@ -5,53 +5,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marketplace</title>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet"> -->
-    <!-- <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
+
     <header class="header">
         <div class="header__top">
             <div class="container">
                 <div class="header__top-inner">
-                    <div class="header__logo">
-                        <a class="header__logo-link" href="#">
-                            <img src="images/logo.png" alt="logo">
-                        </a>
-                    </div>
-                    <div class="header__btn-seller">
-                        <a class="button-seller" href="#">
-                            Become a Seller
-                        </a>
-                    </div>
+                    <a class="header__logo-link logo" href="#">
+                        <img src="images/logo.png" alt="logo">
+                    </a>
+                    <a class="header__btn" href="#">
+                        Become a Seller
+                    </a>
                     <div class="header__profile">
-                        <div class="header__profile-notice">
-                            <a href="#"></a>
-                            <a href="#"></a>
-                            <a href="#"></a>
+                        <div class="header__notice">
+                            <a href="#">
+                                <span class="lnr lnr-alarm"></span>
+                            </a>
+                            <a href="#">
+                                <span class="lnr lnr-envelope"></span>
+                            </a>
+                            <a href="#">
+                                <span class="lnr lnr-cart"></span>
+                            </a>
                         </div>
-                        <div class="header__profile-info">
-                            <div class="profile-avatar">
-                                <a class="avatar-link" href="#">
-                                    <img class="avatar" src="images/avatar.png" alt="avatar">
-                                </a>
-                            </div>
-                            <div class="profile-info">
-                                <div class="profile-name">
-                                    <a href="#">
-                                        Taofiq Hakim
-                                    </a>
-                                </div>
-                                <div class="profile-balance">
-                                    $20.45
-                                </div>
+                        <div class="header__info">
+                            <a class="header__avatar" href="#">
+                                <img class="header__avatar-img" src="images/avatar.png" alt="avatar">
+                            </a>
+                        </div>
+                        <div class="header__user-info">
+                            <a class="header__name" href="#">
+                                Taofiq Hakim
+                            </a>
+                            <div class="header__balance">
+                                $20.45
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -59,37 +56,37 @@
             <div class="container">
                 <nav class="menu">
                     <ul class="menu__list">
-                        <li class="menu__list-item">
-                            <a class="menu__list-link" href="#">
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">
                                 HOME
                             </a>
                         </li>
-                        <li class="menu__list-item">
-                            <a class="menu__list-link" href="#">
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">
                                 all products
                             </a>
                         </li>
-                        <li class="menu__list-item">
-                            <a class="menu__list-link" href="#">
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">
                                 wordpress
                             </a>
                         </li>
-                        <li class="menu__list-item">
-                            <a class="menu__list-link" href="#">
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">
                                 festures
                             </a>
                         </li>
-                        <li class="menu__list-item">
-                            <a class="menu__list-link" href="#">
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">
                                 Pages
                             </a>
                         </li>
                     </ul>
                     <div class="menu__search-form">
                         <form>
-                            <input type="text" placeholder="Search product here..." required>
-                            <button type="submit">
-                                <img src="images/icons/search.png" alt="">
+                            <input class="menu__input" type="search" placeholder="Search product here..." required>
+                            <button class="menu__button" type="submit">
+                                <span class="lnr lnr-magnifier"></span>
                             </button>
                         </form>
                     </div>
@@ -100,37 +97,40 @@
 
     <main>
 
-        <section class="slider">
+        <section class="main-screen">
             <div class="container">
-                <div class="slider__inner">
-                    <div class="slider__inner-title">
+                <div class="main-screen__inner">
+                    <div class="main-screen__title">
                         Create Your Own
                         <span>
                             Digital Product Marketplace
                         </span>
                     </div>
-                    <div class="slider__inner-text">
+                    <div class="main-screen__text">
                         MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products
                     </div>
-                    <div class="slider__inner-block">
-                        <button class="btn-all" href="#">
+                    <div class="main-screen__block">
+                        <button class="main-screen__btn-all button" href="#">
                             View All Products
                         </button>
-                        <button class="btn-popular" href="#">
+                        <button class="main-screen__btn-popular button" href="#">
                             Popular Products
                         </button>
                     </div>
-                    <div class="slider__inner-search-block">
-                        <form>
-                            <input type="text" placeholder="Search your products...">
-                            <div class="category">
-                                <a href="#">All Categories</a>
-                            </div>
+                    <div class="main-screen__search-block">
+                        <form class="main-screen__search-form">
+                            <input class="main-screen__input" type="search" placeholder="Search your products...">
+                            <a class="main-screen__category" href="#">
+                                <div class="main-screen__category-link" href="#">All Categories
+
+                                </div>
+                                <span class="lnr lnr-chevron-down"></span>
+                            </a>
                         </form>
-                        <button type="submit">Search Now</button>
+                        <button class="main-screen__button" type="submit">Search Now</button>
                     </div>
-                    <div class="search-block-shadow shadow1"></div>
-                    <div class="search-block-shadow shadow2"></div>
+                    <div class="main-screen__shadow-block shadow1"></div>
+                    <div class="main-screen__shadow-block shadow2"></div>
 
                 </div>
             </div>
@@ -140,42 +140,39 @@
             <div class="container">
                 <div class="advantages__inner">
                     <div class="advantages__item">
-                        <div class="advantages__item-images">
+                        <div class="advantages__image">
                             <img src="images/content/advantages-1.png" alt="">
                         </div>
-                        <div class="advantages__item-title">
+                        <div class="advantages__title">
                             Best UX Research
                         </div>
-                        <div class="advantages__item-text">
-                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-                            the mattis, leo quam aliquet diam
-                            congue is laoreet elit metus.
+                        <div class="advantages__text">
+                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
+                            mattis, leo quam aliquet diam congue is laoreet elit metus.
                         </div>
                     </div>
                     <div class="advantages__item">
-                        <div class="advantages__item-images">
+                        <div class="advantages__image">
                             <img src="images/content/advantages-2.png" alt="">
                         </div>
-                        <div class="advantages__item-title">
+                        <div class="advantages__title">
                             Fully Responsive
                         </div>
-                        <div class="advantages__item-text">
-                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-                            the mattis, leo quam aliquet diam
-                            congue is laoreet elit metus.
+                        <div class="advantages__text">
+                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
+                            mattis, leo quam aliquet diam congue is laoreet elit metus.
                         </div>
                     </div>
                     <div class="advantages__item">
-                        <div class="advantages__item-images">
+                        <div class="advantages__image">
                             <img src="images/content/advantages-3.png" alt="">
                         </div>
-                        <div class="advantages__item-title">
+                        <div class="advantages__title">
                             Buy & Sell Easily
                         </div>
-                        <div class="advantages__item-text">
-                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-                            the mattis, leo quam aliquet diam
-                            congue is laoreet elit metus.
+                        <div class="advantages__text">
+                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
+                            mattis, leo quam aliquet diam congue is laoreet elit metus.
                         </div>
                     </div>
                 </div>
@@ -184,150 +181,733 @@
 
         <section class="featured">
             <div class="container">
-                <div class="featured__inner">
-                    <div class="featured__header">
-                        <div class="featured__header-title">
+                <div class="featured__inner heading">
+                    <div class="featured__header heading__header">
+                        <div class="featured__title heading__title">
                             Weekly Featured Products
                         </div>
-                        <div class="featured__header-btn">
-
+                        <div class="featured__btn heading__btn">
                         </div>
                     </div>
-
-
-                    <div class="slider111">
-
-
-                        <div class="featured__slider">
-                            <div class="featured__slider-images"
+                    <div class="featured__slider">
+                        <div class="featured__item">
+                            <div class="featured__images"
                                 style="background-image: url(../images/content/featured-1.jpg);">
-
+                                <button class="button-info">More Info</button>
+                                <button class="button-demo">Live Demo</button>
                             </div>
-                            <div class="featured__slider-info">
-                                <div class="info__title">
+                            <div class="featured__info">
+                                <div class="featured__info-title">
                                     One Page Resume Template
                                 </div>
-                                <div class="info__product">
-                                    <div class="info__product-avatar"
-                                        style="background-image: url(../images/avatar-featured.jpg);">
-                                    </div>
-                                    <span>AazzTech</span>
-                                    <div class="info__product-icon">
-
-                                    </div>
-                                    <div class="info__product-text">WordPress</div>
+                                <div class="featured__product">
+                                    <a class="featured__avatar" href="#">
+                                        <img class="featured__avatar-img" src="images/avatar-featured.png" alt="avatar">
+                                    </a>
+                                    <a class="featured__link" href="#">AazzTech</a>
+                                    <a class="featured__icon" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px">
+                                            <path fill-rule="evenodd" fill="rgb(115, 71, 193)"
+                                                d="M0.166,7.666 C0.166,11.808 3.524,15.166 7.666,15.166 C11.808,15.166 15.166,11.808 15.166,7.666 C15.166,3.524 11.808,0.165 7.666,0.165 C3.524,0.165 0.166,3.524 0.166,7.666 ZM0.744,7.666 C0.744,6.662 0.960,5.710 1.344,4.849 L4.646,13.895 C2.337,12.773 0.744,10.405 0.744,7.666 ZM7.666,14.587 C6.987,14.587 6.331,14.488 5.711,14.306 L7.788,8.272 L9.916,14.101 C9.930,14.135 9.947,14.165 9.965,14.195 C9.246,14.449 8.472,14.587 7.666,14.587 ZM13.261,7.536 C13.655,6.548 13.788,5.759 13.788,5.056 C13.788,4.802 13.770,4.566 13.740,4.344 C14.280,5.331 14.587,6.462 14.587,7.666 C14.587,10.220 13.204,12.449 11.147,13.648 L13.261,7.536 ZM11.768,5.407 C12.031,5.868 12.339,6.461 12.339,7.316 C12.339,7.909 12.163,8.654 11.812,9.554 L11.122,11.860 L8.620,4.421 C9.038,4.397 9.412,4.355 9.412,4.355 C9.785,4.310 9.740,3.763 9.368,3.784 C9.368,3.784 8.247,3.872 7.523,3.872 C6.843,3.872 5.701,3.784 5.701,3.784 C5.327,3.763 5.284,4.333 5.656,4.355 C5.656,4.355 6.010,4.397 6.383,4.421 L7.460,7.376 L5.946,11.918 L3.425,4.421 C3.842,4.397 4.218,4.355 4.218,4.355 C4.591,4.310 4.545,3.763 4.173,3.784 C4.173,3.784 3.053,3.872 2.328,3.872 C2.198,3.872 2.046,3.869 1.883,3.864 C3.121,1.985 5.249,0.744 7.666,0.744 C9.469,0.744 11.109,1.433 12.340,2.562 C12.311,2.559 12.281,2.556 12.251,2.556 C11.570,2.556 11.089,3.148 11.089,3.784 C11.089,4.355 11.418,4.838 11.768,5.407 Z" />
+                                        </svg>
+                                    </a>
+                                    <a class="featured__text" href=#"">WordPress</a>
                                 </div>
-                                <div class="info__text">
+                                <div class="featured__info-text">
                                     Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-                                    the
-                                    mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
-                                    pharetra,
-                                    justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
-
-                                    
-
+                                    the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
+                                    pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut
+                                    scelerisque.
                                 </div>
-                                <div class="info__btn">
-                                    <div class="info__btn-web">website</div>
-                                    <div class="info__btn-plugin">plugin</div>
-                                    <div class="info__btn-landing">landing page</div>
+                                <div class="featured__info-btn">
+                                    <div class="featured__btn-web">website</div>
+                                    <div class="featured__btn-plugin">plugin</div>
+                                    <div class="featured__btn-landing">landing page</div>
                                 </div>
-                                <div class="info__footer">
-                                    <div class="info__footer-price">$10 - $50</div>
-                                    <div class="info__footer-icons"></div>
-                                    <div class="info__footer-star"></div>
+                                <div class="featured__footer">
+                                    <a href="#" class="featured__price">$10 - $50</a>
+                                    <div class="featured__icons">
+                                        <a href="#"><span class="lnr lnr-heart "></span></a>
+                                        <span class="featured__heart-num shift-num">46</span>
+                                        <a href="#"><span class="lnr lnr-cart "></span></a>
+                                        <span class="featured__cart-num shift-num">634</span>
+                                    </div>
+                                    <div class="featured__star">
+                                        <div class="rate-star"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="featured__slider">
-                            <div class="featured__slider-images"
+                        <div class="featured__item">
+                            <div class="featured__images"
                                 style="background-image: url(../images/content/featured-1.jpg);">
-
+                                <button class="button-info">More Info</button>
+                                <button class="button-demo">Live Demo</button>
                             </div>
-                            <div class="featured__slider-info">
-                                <div class="info__title">
+                            <div class="featured__info">
+                                <div class="featured__info-title">
                                     One Page Resume Template
                                 </div>
-                                <div class="info__product">
-                                    <div class="info__product-avatar"
-                                        style="background-image: url(../images/avatar-featured.jpg);">
-                                    </div>
-                                    <span>AazzTech</span>
-                                    <div class="info__product-icon">
-
-                                    </div>
-                                    <div class="info__product-text">WordPress</div>
+                                <div class="featured__product">
+                                    <a class="featured__avatar" href="#">
+                                        <img class="featured__avatar-img" src="images/avatar-featured.png" alt="avatar">
+                                    </a>
+                                    <a class="featured__link" href="#">AazzTech</a>
+                                    <a class="featured__icon" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px">
+                                            <path fill-rule="evenodd" fill="rgb(115, 71, 193)"
+                                                d="M0.166,7.666 C0.166,11.808 3.524,15.166 7.666,15.166 C11.808,15.166 15.166,11.808 15.166,7.666 C15.166,3.524 11.808,0.165 7.666,0.165 C3.524,0.165 0.166,3.524 0.166,7.666 ZM0.744,7.666 C0.744,6.662 0.960,5.710 1.344,4.849 L4.646,13.895 C2.337,12.773 0.744,10.405 0.744,7.666 ZM7.666,14.587 C6.987,14.587 6.331,14.488 5.711,14.306 L7.788,8.272 L9.916,14.101 C9.930,14.135 9.947,14.165 9.965,14.195 C9.246,14.449 8.472,14.587 7.666,14.587 ZM13.261,7.536 C13.655,6.548 13.788,5.759 13.788,5.056 C13.788,4.802 13.770,4.566 13.740,4.344 C14.280,5.331 14.587,6.462 14.587,7.666 C14.587,10.220 13.204,12.449 11.147,13.648 L13.261,7.536 ZM11.768,5.407 C12.031,5.868 12.339,6.461 12.339,7.316 C12.339,7.909 12.163,8.654 11.812,9.554 L11.122,11.860 L8.620,4.421 C9.038,4.397 9.412,4.355 9.412,4.355 C9.785,4.310 9.740,3.763 9.368,3.784 C9.368,3.784 8.247,3.872 7.523,3.872 C6.843,3.872 5.701,3.784 5.701,3.784 C5.327,3.763 5.284,4.333 5.656,4.355 C5.656,4.355 6.010,4.397 6.383,4.421 L7.460,7.376 L5.946,11.918 L3.425,4.421 C3.842,4.397 4.218,4.355 4.218,4.355 C4.591,4.310 4.545,3.763 4.173,3.784 C4.173,3.784 3.053,3.872 2.328,3.872 C2.198,3.872 2.046,3.869 1.883,3.864 C3.121,1.985 5.249,0.744 7.666,0.744 C9.469,0.744 11.109,1.433 12.340,2.562 C12.311,2.559 12.281,2.556 12.251,2.556 C11.570,2.556 11.089,3.148 11.089,3.784 C11.089,4.355 11.418,4.838 11.768,5.407 Z" />
+                                        </svg>
+                                    </a>
+                                    <a class="featured__text" href=#"">WordPress</a>
                                 </div>
-                                <div class="info__text">
+                                <div class="featured__info-text">
                                     Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-                                    the
-                                    mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
-                                    pharetra,
-                                    justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
+                                    the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
+                                    pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut
+                                    scelerisque.
                                 </div>
-                                <div class="info__btn">
-                                    <div class="info__btn-web">website</div>
-                                    <div class="info__btn-plugin">plugin</div>
-                                    <div class="info__btn-landing">landing page</div>
+                                <div class="featured__info-btn">
+                                    <div class="featured__btn-web">website</div>
+                                    <div class="featured__btn-plugin">plugin</div>
+                                    <div class="featured__btn-landing">landing page</div>
                                 </div>
-                                <div class="info__footer">
-                                    <div class="info__footer-price">$10 - $50</div>
-                                    <div class="info__footer-icons"></div>
-                                    <div class="info__footer-star"></div>
+                                <div class="featured__footer">
+                                    <a href="#" class="featured__price">$10 - $50</a>
+                                    <div class="featured__icons">
+                                        <a href="#"><span class="lnr lnr-heart "></span></a>
+                                        <span class="featured__heart-num shift-num">46</span>
+                                        <a href="#"><span class="lnr lnr-cart "></span></a>
+                                        <span class="featured__cart-num shift-num">634</span>
+                                    </div>
+                                    <div class="featured__star">
+                                        <div class="rate-star"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="featured__slider">
-                            <div class="featured__slider-images"
+                        <div class="featured__item">
+                            <div class="featured__images"
                                 style="background-image: url(../images/content/featured-1.jpg);">
-
+                                <button class="button-info">More Info</button>
+                                <button class="button-demo">Live Demo</button>
                             </div>
-                            <div class="featured__slider-info">
-                                <div class="info__title">
+                            <div class="featured__info">
+                                <div class="featured__info-title">
                                     One Page Resume Template
                                 </div>
-                                <div class="info__product">
-                                    <div class="info__product-avatar"
-                                        style="background-image: url(../images/avatar-featured.jpg);">
-                                    </div>
-                                    <span>AazzTech</span>
-                                    <div class="info__product-icon">
-
-                                    </div>
-                                    <div class="info__product-text">WordPress</div>
+                                <div class="featured__product">
+                                    <a class="featured__avatar" href="#">
+                                        <img class="featured__avatar-img" src="images/avatar-featured.png" alt="avatar">
+                                    </a>
+                                    <a class="featured__link" href="#">AazzTech</a>
+                                    <a class="featured__icon" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px">
+                                            <path fill-rule="evenodd" fill="rgb(115, 71, 193)"
+                                                d="M0.166,7.666 C0.166,11.808 3.524,15.166 7.666,15.166 C11.808,15.166 15.166,11.808 15.166,7.666 C15.166,3.524 11.808,0.165 7.666,0.165 C3.524,0.165 0.166,3.524 0.166,7.666 ZM0.744,7.666 C0.744,6.662 0.960,5.710 1.344,4.849 L4.646,13.895 C2.337,12.773 0.744,10.405 0.744,7.666 ZM7.666,14.587 C6.987,14.587 6.331,14.488 5.711,14.306 L7.788,8.272 L9.916,14.101 C9.930,14.135 9.947,14.165 9.965,14.195 C9.246,14.449 8.472,14.587 7.666,14.587 ZM13.261,7.536 C13.655,6.548 13.788,5.759 13.788,5.056 C13.788,4.802 13.770,4.566 13.740,4.344 C14.280,5.331 14.587,6.462 14.587,7.666 C14.587,10.220 13.204,12.449 11.147,13.648 L13.261,7.536 ZM11.768,5.407 C12.031,5.868 12.339,6.461 12.339,7.316 C12.339,7.909 12.163,8.654 11.812,9.554 L11.122,11.860 L8.620,4.421 C9.038,4.397 9.412,4.355 9.412,4.355 C9.785,4.310 9.740,3.763 9.368,3.784 C9.368,3.784 8.247,3.872 7.523,3.872 C6.843,3.872 5.701,3.784 5.701,3.784 C5.327,3.763 5.284,4.333 5.656,4.355 C5.656,4.355 6.010,4.397 6.383,4.421 L7.460,7.376 L5.946,11.918 L3.425,4.421 C3.842,4.397 4.218,4.355 4.218,4.355 C4.591,4.310 4.545,3.763 4.173,3.784 C4.173,3.784 3.053,3.872 2.328,3.872 C2.198,3.872 2.046,3.869 1.883,3.864 C3.121,1.985 5.249,0.744 7.666,0.744 C9.469,0.744 11.109,1.433 12.340,2.562 C12.311,2.559 12.281,2.556 12.251,2.556 C11.570,2.556 11.089,3.148 11.089,3.784 C11.089,4.355 11.418,4.838 11.768,5.407 Z" />
+                                        </svg>
+                                    </a>
+                                    <a class="featured__text" href=#"">WordPress</a>
                                 </div>
-                                <div class="info__text">
+                                <div class="featured__info-text">
                                     Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-                                    the
-                                    mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
-                                    pharetra,
-                                    justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
+                                    the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
+                                    pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut
+                                    scelerisque.
                                 </div>
-                                <div class="info__btn">
-                                    <div class="info__btn-web">website</div>
-                                    <div class="info__btn-plugin">plugin</div>
-                                    <div class="info__btn-landing">landing page</div>
+                                <div class="featured__info-btn">
+                                    <div class="featured__btn-web">website</div>
+                                    <div class="featured__btn-plugin">plugin</div>
+                                    <div class="featured__btn-landing">landing page</div>
                                 </div>
-                                <div class="info__footer">
-                                    <div class="info__footer-price">$10 - $50</div>
-                                    <div class="info__footer-icons"></div>
-                                    <div class="info__footer-star"></div>
+                                <div class="featured__footer">
+                                    <a href="#" class="featured__price">$10 - $50</a>
+                                    <div class="featured__icons">
+                                        <a href="#"><span class="lnr lnr-heart "></span></a>
+                                        <span class="featured__heart-num shift-num">46</span>
+                                        <a href="#"><span class="lnr lnr-cart "></span></a>
+                                        <span class="featured__cart-num shift-num">634</span>
+                                    </div>
+                                    <div class="featured__star">
+                                        <div class="rate-star"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
-
-
-
                     </div>
                 </div>
             </div>
         </section>
 
+        <section class="products">
+            <div class="container">
+                <div class="products__header">
+                    <div class="products__title">
+                        Newest Release Products
+                    </div>
+                    <span class="products__text">Filter by:</span>
+                    <div class="products__btn">
+                    </div>
+                </div>
+                <div class="products__inner">
+                    <div class="products__inner-btn">
+                        <button type="button" data-filter=".category-plugins">Plugins</button>
+                        <button type="button" data-filter=".category-wordpress">WordPress</button>
+                        <button type="button" data-filter=".category-site">Site Template</button>
+                        <button type="button" data-filter=".category-psd">PSD Template</button>
+                        <button type="button" data-filter=".category-joomla">Joomla</button>
+                        <button type="button" data-filter=".category-user">User Interface</button>
+                        <button type="button" data-filter=".category-landing">Landing Page</button>
+                        <button type="button" data-filter=".category-software">Software</button>
+                    </div>
+                    <div class="products__inner-box">
 
+                        <div class="products__item card mix category-plugins category-psd" data-order="1">
+                            <a class="card__img" href="#"
+                                style="background-image: url(../images/content/product-item.jpg);">
+                                <button>More Info</button>
+                                <button>Live Demo</button>
+                            </a>
+                            <div class="card__info">
+                                <div class="card__info-title">
+                                    E-commerce Shopping Cart
+                                </div>
+                                <div class="card__content">
+                                    <a class="card__avatar" href="#">
+                                        <img class="card__avatar-img" src="images/avatar-featured.png" alt="avatar">
+                                    </a>
+                                    <a class="card__link" href="#">Theme-Valley</a>
+                                    <a class="card__icon" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px">
+                                            <path fill-rule="evenodd" fill="rgb(115, 71, 193)"
+                                                d="M0.166,7.666 C0.166,11.808 3.524,15.166 7.666,15.166 C11.808,15.166 15.166,11.808 15.166,7.666 C15.166,3.524 11.808,0.165 7.666,0.165 C3.524,0.165 0.166,3.524 0.166,7.666 ZM0.744,7.666 C0.744,6.662 0.960,5.710 1.344,4.849 L4.646,13.895 C2.337,12.773 0.744,10.405 0.744,7.666 ZM7.666,14.587 C6.987,14.587 6.331,14.488 5.711,14.306 L7.788,8.272 L9.916,14.101 C9.930,14.135 9.947,14.165 9.965,14.195 C9.246,14.449 8.472,14.587 7.666,14.587 ZM13.261,7.536 C13.655,6.548 13.788,5.759 13.788,5.056 C13.788,4.802 13.770,4.566 13.740,4.344 C14.280,5.331 14.587,6.462 14.587,7.666 C14.587,10.220 13.204,12.449 11.147,13.648 L13.261,7.536 ZM11.768,5.407 C12.031,5.868 12.339,6.461 12.339,7.316 C12.339,7.909 12.163,8.654 11.812,9.554 L11.122,11.860 L8.620,4.421 C9.038,4.397 9.412,4.355 9.412,4.355 C9.785,4.310 9.740,3.763 9.368,3.784 C9.368,3.784 8.247,3.872 7.523,3.872 C6.843,3.872 5.701,3.784 5.701,3.784 C5.327,3.763 5.284,4.333 5.656,4.355 C5.656,4.355 6.010,4.397 6.383,4.421 L7.460,7.376 L5.946,11.918 L3.425,4.421 C3.842,4.397 4.218,4.355 4.218,4.355 C4.591,4.310 4.545,3.763 4.173,3.784 C4.173,3.784 3.053,3.872 2.328,3.872 C2.198,3.872 2.046,3.869 1.883,3.864 C3.121,1.985 5.249,0.744 7.666,0.744 C9.469,0.744 11.109,1.433 12.340,2.562 C12.311,2.559 12.281,2.556 12.251,2.556 C11.570,2.556 11.089,3.148 11.089,3.784 C11.089,4.355 11.418,4.838 11.768,5.407 Z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                    <a class="card__icon-text" href="#">Plugin</a>
+                                </div>
+                                <div class="card__item-text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the mattis, leo quam aliquet congue.
+                                </div>
+                            </div>
+                            <div class="card__footer">
+                                <a class="card__price" href="#">$20</a>
+                                <div class="card__icons">
+                                    <div class="card__heart-box">
+                                        <a href="#"><span class="lnr lnr-heart "></span></a>
+                                        <span class="card__heart-num shift-num">9</span>
+                                    </div>
+                                    <div href="#" class="card__star">
+                                        <div class="rate-star"></div>
+                                    </div>
+                                    <div class="card__cart-box">
+                                        <a href="#"><span class="lnr lnr-cart "></span></a>
+                                        <span class="card__cart-num shift-num">246</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products__item card mix category-wordpress category-landing" data-order="2">
+                            <a class="card__img" href="#"
+                                style="background-image: url(../images/content/product-item.jpg);">
+                                <button>More Info</button>
+                                <button>Live Demo</button>
+                            </a>
+                            <div class="card__info">
+                                <div class="card__info-title">
+                                    E-commerce Shopping Cart
+                                </div>
+                                <div class="card__content">
+                                    <a class="card__avatar" href="#">
+                                        <img class="card__avatar-img" src="images/avatar-featured.png" alt="avatar">
+                                    </a>
+                                    <a class="card__link" href="#">Theme-Valley</a>
+                                    <a class="card__icon" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px">
+                                            <path fill-rule="evenodd" fill="rgb(115, 71, 193)"
+                                                d="M0.166,7.666 C0.166,11.808 3.524,15.166 7.666,15.166 C11.808,15.166 15.166,11.808 15.166,7.666 C15.166,3.524 11.808,0.165 7.666,0.165 C3.524,0.165 0.166,3.524 0.166,7.666 ZM0.744,7.666 C0.744,6.662 0.960,5.710 1.344,4.849 L4.646,13.895 C2.337,12.773 0.744,10.405 0.744,7.666 ZM7.666,14.587 C6.987,14.587 6.331,14.488 5.711,14.306 L7.788,8.272 L9.916,14.101 C9.930,14.135 9.947,14.165 9.965,14.195 C9.246,14.449 8.472,14.587 7.666,14.587 ZM13.261,7.536 C13.655,6.548 13.788,5.759 13.788,5.056 C13.788,4.802 13.770,4.566 13.740,4.344 C14.280,5.331 14.587,6.462 14.587,7.666 C14.587,10.220 13.204,12.449 11.147,13.648 L13.261,7.536 ZM11.768,5.407 C12.031,5.868 12.339,6.461 12.339,7.316 C12.339,7.909 12.163,8.654 11.812,9.554 L11.122,11.860 L8.620,4.421 C9.038,4.397 9.412,4.355 9.412,4.355 C9.785,4.310 9.740,3.763 9.368,3.784 C9.368,3.784 8.247,3.872 7.523,3.872 C6.843,3.872 5.701,3.784 5.701,3.784 C5.327,3.763 5.284,4.333 5.656,4.355 C5.656,4.355 6.010,4.397 6.383,4.421 L7.460,7.376 L5.946,11.918 L3.425,4.421 C3.842,4.397 4.218,4.355 4.218,4.355 C4.591,4.310 4.545,3.763 4.173,3.784 C4.173,3.784 3.053,3.872 2.328,3.872 C2.198,3.872 2.046,3.869 1.883,3.864 C3.121,1.985 5.249,0.744 7.666,0.744 C9.469,0.744 11.109,1.433 12.340,2.562 C12.311,2.559 12.281,2.556 12.251,2.556 C11.570,2.556 11.089,3.148 11.089,3.784 C11.089,4.355 11.418,4.838 11.768,5.407 Z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                    <a class="card__icon-text" href="#">Plugin</a>
+                                </div>
+                                <div class="card__item-text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the mattis, leo quam aliquet congue.
+                                </div>
+                            </div>
+                            <div class="card__footer">
+                                <a class="card__price" href="#">$20</a>
+                                <div class="card__icons">
+                                    <div class="card__heart-box">
+                                        <a href="#"><span class="lnr lnr-heart "></span></a>
+                                        <span class="card__heart-num shift-num">9</span>
+                                    </div>
+                                    <div href="#" class="card__star">
+                                        <div class="rate-star"></div>
+                                    </div>
+                                    <div class="card__cart-box">
+                                        <a href="#"><span class="lnr lnr-cart "></span></a>
+                                        <span class="card__cart-num shift-num">246</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products__item card mix category-site category-user" data-order="3">
+                            <a class="card__img" href="#"
+                                style="background-image: url(../images/content/product-item.jpg);">
+                                <button>More Info</button>
+                                <button>Live Demo</button>
+                            </a>
+                            <div class="card__info">
+                                <div class="card__info-title">
+                                    E-commerce Shopping Cart
+                                </div>
+                                <div class="card__content">
+                                    <a class="card__avatar" href="#">
+                                        <img class="card__avatar-img" src="images/avatar-featured.png" alt="avatar">
+                                    </a>
+                                    <a class="card__link" href="#">Theme-Valley</a>
+                                    <a class="card__icon" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px">
+                                            <path fill-rule="evenodd" fill="rgb(115, 71, 193)"
+                                                d="M0.166,7.666 C0.166,11.808 3.524,15.166 7.666,15.166 C11.808,15.166 15.166,11.808 15.166,7.666 C15.166,3.524 11.808,0.165 7.666,0.165 C3.524,0.165 0.166,3.524 0.166,7.666 ZM0.744,7.666 C0.744,6.662 0.960,5.710 1.344,4.849 L4.646,13.895 C2.337,12.773 0.744,10.405 0.744,7.666 ZM7.666,14.587 C6.987,14.587 6.331,14.488 5.711,14.306 L7.788,8.272 L9.916,14.101 C9.930,14.135 9.947,14.165 9.965,14.195 C9.246,14.449 8.472,14.587 7.666,14.587 ZM13.261,7.536 C13.655,6.548 13.788,5.759 13.788,5.056 C13.788,4.802 13.770,4.566 13.740,4.344 C14.280,5.331 14.587,6.462 14.587,7.666 C14.587,10.220 13.204,12.449 11.147,13.648 L13.261,7.536 ZM11.768,5.407 C12.031,5.868 12.339,6.461 12.339,7.316 C12.339,7.909 12.163,8.654 11.812,9.554 L11.122,11.860 L8.620,4.421 C9.038,4.397 9.412,4.355 9.412,4.355 C9.785,4.310 9.740,3.763 9.368,3.784 C9.368,3.784 8.247,3.872 7.523,3.872 C6.843,3.872 5.701,3.784 5.701,3.784 C5.327,3.763 5.284,4.333 5.656,4.355 C5.656,4.355 6.010,4.397 6.383,4.421 L7.460,7.376 L5.946,11.918 L3.425,4.421 C3.842,4.397 4.218,4.355 4.218,4.355 C4.591,4.310 4.545,3.763 4.173,3.784 C4.173,3.784 3.053,3.872 2.328,3.872 C2.198,3.872 2.046,3.869 1.883,3.864 C3.121,1.985 5.249,0.744 7.666,0.744 C9.469,0.744 11.109,1.433 12.340,2.562 C12.311,2.559 12.281,2.556 12.251,2.556 C11.570,2.556 11.089,3.148 11.089,3.784 C11.089,4.355 11.418,4.838 11.768,5.407 Z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                    <a class="card__icon-text" href="#">Plugin</a>
+                                </div>
+                                <div class="card__item-text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the mattis, leo quam aliquet congue.
+                                </div>
+                            </div>
+                            <div class="card__footer">
+                                <a class="card__price" href="#">$20</a>
+                                <div class="card__icons">
+                                    <div class="card__heart-box">
+                                        <a href="#"><span class="lnr lnr-heart "></span></a>
+                                        <span class="card__heart-num shift-num">9</span>
+                                    </div>
+                                    <div href="#" class="card__star">
+                                        <div class="rate-star"></div>
+                                    </div>
+                                    <div class="card__cart-box">
+                                        <a href="#"><span class="lnr lnr-cart "></span></a>
+                                        <span class="card__cart-num shift-num">246</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products__item card mix category-psd category-software" data-order="4">
+                            <a class="card__img" href="#"
+                                style="background-image: url(../images/content/product-item.jpg);">
+                                <button>More Info</button>
+                                <button>Live Demo</button>
+                            </a>
+                            <div class="card__info">
+                                <div class="card__info-title">
+                                    E-commerce Shopping Cart
+                                </div>
+                                <div class="card__content">
+                                    <a class="card__avatar" href="#">
+                                        <img class="card__avatar-img" src="images/avatar-featured.png" alt="avatar">
+                                    </a>
+                                    <a class="card__link" href="#">Theme-Valley</a>
+                                    <a class="card__icon" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px">
+                                            <path fill-rule="evenodd" fill="rgb(115, 71, 193)"
+                                                d="M0.166,7.666 C0.166,11.808 3.524,15.166 7.666,15.166 C11.808,15.166 15.166,11.808 15.166,7.666 C15.166,3.524 11.808,0.165 7.666,0.165 C3.524,0.165 0.166,3.524 0.166,7.666 ZM0.744,7.666 C0.744,6.662 0.960,5.710 1.344,4.849 L4.646,13.895 C2.337,12.773 0.744,10.405 0.744,7.666 ZM7.666,14.587 C6.987,14.587 6.331,14.488 5.711,14.306 L7.788,8.272 L9.916,14.101 C9.930,14.135 9.947,14.165 9.965,14.195 C9.246,14.449 8.472,14.587 7.666,14.587 ZM13.261,7.536 C13.655,6.548 13.788,5.759 13.788,5.056 C13.788,4.802 13.770,4.566 13.740,4.344 C14.280,5.331 14.587,6.462 14.587,7.666 C14.587,10.220 13.204,12.449 11.147,13.648 L13.261,7.536 ZM11.768,5.407 C12.031,5.868 12.339,6.461 12.339,7.316 C12.339,7.909 12.163,8.654 11.812,9.554 L11.122,11.860 L8.620,4.421 C9.038,4.397 9.412,4.355 9.412,4.355 C9.785,4.310 9.740,3.763 9.368,3.784 C9.368,3.784 8.247,3.872 7.523,3.872 C6.843,3.872 5.701,3.784 5.701,3.784 C5.327,3.763 5.284,4.333 5.656,4.355 C5.656,4.355 6.010,4.397 6.383,4.421 L7.460,7.376 L5.946,11.918 L3.425,4.421 C3.842,4.397 4.218,4.355 4.218,4.355 C4.591,4.310 4.545,3.763 4.173,3.784 C4.173,3.784 3.053,3.872 2.328,3.872 C2.198,3.872 2.046,3.869 1.883,3.864 C3.121,1.985 5.249,0.744 7.666,0.744 C9.469,0.744 11.109,1.433 12.340,2.562 C12.311,2.559 12.281,2.556 12.251,2.556 C11.570,2.556 11.089,3.148 11.089,3.784 C11.089,4.355 11.418,4.838 11.768,5.407 Z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                    <a class="card__icon-text" href="#">Plugin</a>
+                                </div>
+                                <div class="card__item-text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the mattis, leo quam aliquet congue.
+                                </div>
+                            </div>
+                            <div class="card__footer">
+                                <a class="card__price" href="#">$20</a>
+                                <div class="card__icons">
+                                    <div class="card__heart-box">
+                                        <a href="#"><span class="lnr lnr-heart "></span></a>
+                                        <span class="card__heart-num shift-num">9</span>
+                                    </div>
+                                    <div href="#" class="card__star">
+                                        <div class="rate-star"></div>
+                                    </div>
+                                    <div class="card__cart-box">
+                                        <a href="#"><span class="lnr lnr-cart "></span></a>
+                                        <span class="card__cart-num shift-num">246</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products__item card mix category-joomla category-plugins" data-order="5">
+                            <a class="card__img" href="#"
+                                style="background-image: url(../images/content/product-item.jpg);">
+                                <button>More Info</button>
+                                <button>Live Demo</button>
+                            </a>
+                            <div class="card__info">
+                                <div class="card__info-title">
+                                    E-commerce Shopping Cart
+                                </div>
+                                <div class="card__content">
+                                    <a class="card__avatar" href="#">
+                                        <img class="card__avatar-img" src="images/avatar-featured.png" alt="avatar">
+                                    </a>
+                                    <a class="card__link" href="#">Theme-Valley</a>
+                                    <a class="card__icon" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px">
+                                            <path fill-rule="evenodd" fill="rgb(115, 71, 193)"
+                                                d="M0.166,7.666 C0.166,11.808 3.524,15.166 7.666,15.166 C11.808,15.166 15.166,11.808 15.166,7.666 C15.166,3.524 11.808,0.165 7.666,0.165 C3.524,0.165 0.166,3.524 0.166,7.666 ZM0.744,7.666 C0.744,6.662 0.960,5.710 1.344,4.849 L4.646,13.895 C2.337,12.773 0.744,10.405 0.744,7.666 ZM7.666,14.587 C6.987,14.587 6.331,14.488 5.711,14.306 L7.788,8.272 L9.916,14.101 C9.930,14.135 9.947,14.165 9.965,14.195 C9.246,14.449 8.472,14.587 7.666,14.587 ZM13.261,7.536 C13.655,6.548 13.788,5.759 13.788,5.056 C13.788,4.802 13.770,4.566 13.740,4.344 C14.280,5.331 14.587,6.462 14.587,7.666 C14.587,10.220 13.204,12.449 11.147,13.648 L13.261,7.536 ZM11.768,5.407 C12.031,5.868 12.339,6.461 12.339,7.316 C12.339,7.909 12.163,8.654 11.812,9.554 L11.122,11.860 L8.620,4.421 C9.038,4.397 9.412,4.355 9.412,4.355 C9.785,4.310 9.740,3.763 9.368,3.784 C9.368,3.784 8.247,3.872 7.523,3.872 C6.843,3.872 5.701,3.784 5.701,3.784 C5.327,3.763 5.284,4.333 5.656,4.355 C5.656,4.355 6.010,4.397 6.383,4.421 L7.460,7.376 L5.946,11.918 L3.425,4.421 C3.842,4.397 4.218,4.355 4.218,4.355 C4.591,4.310 4.545,3.763 4.173,3.784 C4.173,3.784 3.053,3.872 2.328,3.872 C2.198,3.872 2.046,3.869 1.883,3.864 C3.121,1.985 5.249,0.744 7.666,0.744 C9.469,0.744 11.109,1.433 12.340,2.562 C12.311,2.559 12.281,2.556 12.251,2.556 C11.570,2.556 11.089,3.148 11.089,3.784 C11.089,4.355 11.418,4.838 11.768,5.407 Z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                    <a class="card__icon-text" href="#">Plugin</a>
+                                </div>
+                                <div class="card__item-text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the mattis, leo quam aliquet congue.
+                                </div>
+                            </div>
+                            <div class="card__footer">
+                                <a class="card__price" href="#">$20</a>
+                                <div class="card__icons">
+                                    <div class="card__heart-box">
+                                        <a href="#"><span class="lnr lnr-heart "></span></a>
+                                        <span class="card__heart-num shift-num">9</span>
+                                    </div>
+                                    <div href="#" class="card__star">
+                                        <div class="rate-star"></div>
+                                    </div>
+                                    <div class="card__cart-box">
+                                        <a href="#"><span class="lnr lnr-cart "></span></a>
+                                        <span class="card__cart-num shift-num">246</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products__item card mix category-user category-psd" data-order="6">
+                            <a class="card__img" href="#"
+                                style="background-image: url(../images/content/product-item.jpg);">
+                                <button>More Info</button>
+                                <button>Live Demo</button>
+                            </a>
+                            <div class="card__info">
+                                <div class="card__info-title">
+                                    E-commerce Shopping Cart
+                                </div>
+                                <div class="card__content">
+                                    <a class="card__avatar" href="#">
+                                        <img class="card__avatar-img" src="images/avatar-featured.png" alt="avatar">
+                                    </a>
+                                    <a class="card__link" href="#">Theme-Valley</a>
+                                    <a class="card__icon" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px">
+                                            <path fill-rule="evenodd" fill="rgb(115, 71, 193)"
+                                                d="M0.166,7.666 C0.166,11.808 3.524,15.166 7.666,15.166 C11.808,15.166 15.166,11.808 15.166,7.666 C15.166,3.524 11.808,0.165 7.666,0.165 C3.524,0.165 0.166,3.524 0.166,7.666 ZM0.744,7.666 C0.744,6.662 0.960,5.710 1.344,4.849 L4.646,13.895 C2.337,12.773 0.744,10.405 0.744,7.666 ZM7.666,14.587 C6.987,14.587 6.331,14.488 5.711,14.306 L7.788,8.272 L9.916,14.101 C9.930,14.135 9.947,14.165 9.965,14.195 C9.246,14.449 8.472,14.587 7.666,14.587 ZM13.261,7.536 C13.655,6.548 13.788,5.759 13.788,5.056 C13.788,4.802 13.770,4.566 13.740,4.344 C14.280,5.331 14.587,6.462 14.587,7.666 C14.587,10.220 13.204,12.449 11.147,13.648 L13.261,7.536 ZM11.768,5.407 C12.031,5.868 12.339,6.461 12.339,7.316 C12.339,7.909 12.163,8.654 11.812,9.554 L11.122,11.860 L8.620,4.421 C9.038,4.397 9.412,4.355 9.412,4.355 C9.785,4.310 9.740,3.763 9.368,3.784 C9.368,3.784 8.247,3.872 7.523,3.872 C6.843,3.872 5.701,3.784 5.701,3.784 C5.327,3.763 5.284,4.333 5.656,4.355 C5.656,4.355 6.010,4.397 6.383,4.421 L7.460,7.376 L5.946,11.918 L3.425,4.421 C3.842,4.397 4.218,4.355 4.218,4.355 C4.591,4.310 4.545,3.763 4.173,3.784 C4.173,3.784 3.053,3.872 2.328,3.872 C2.198,3.872 2.046,3.869 1.883,3.864 C3.121,1.985 5.249,0.744 7.666,0.744 C9.469,0.744 11.109,1.433 12.340,2.562 C12.311,2.559 12.281,2.556 12.251,2.556 C11.570,2.556 11.089,3.148 11.089,3.784 C11.089,4.355 11.418,4.838 11.768,5.407 Z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                    <a class="card__icon-text" href="#">Plugin</a>
+                                </div>
+                                <div class="card__item-text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the mattis, leo quam aliquet congue.
+                                </div>
+                            </div>
+                            <div class="card__footer">
+                                <a class="card__price" href="#">$20</a>
+                                <div class="card__icons">
+                                    <div class="card__heart-box">
+                                        <a href="#"><span class="lnr lnr-heart "></span></a>
+                                        <span class="card__heart-num shift-num">9</span>
+                                    </div>
+                                    <div href="#" class="card__star">
+                                        <div class="rate-star"></div>
+                                    </div>
+                                    <div class="card__cart-box">
+                                        <a href="#"><span class="lnr lnr-cart "></span></a>
+                                        <span class="card__cart-num shift-num">246</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products__bottom-btn">
+                        <button type="button" data-filter="all">All New Products</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="followers">
+            <div class="container">
+                <div class="heading">
+                    <div class="heading__header">
+                        <div class="heading__title">
+                            Your Followers Feed
+                        </div>
+                        <div class="heading__btn followers__btn">
+                        </div>
+                    </div>
+                    <div class="followers__content">
+                        <div class="followers__item card">
+                            <a class="card__img" href="#"
+                                style="background-image: url(../images/content/product-item.jpg);">
+                                <button>More Info</button>
+                                <button>Live Demo</button>
+                            </a>
+                            <div class="card__info">
+                                <div class="card__info-title">
+                                    E-commerce Shopping Cart
+                                </div>
+                                <div class="card__content">
+                                    <a class="card__avatar" href="#">
+                                        <img class="card__avatar-img" src="images/avatar-featured.png" alt="avatar">
+                                    </a>
+                                    <a class="card__link" href="#">Theme-Valley</a>
+                                    <a class="card__icon" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px">
+                                            <path fill-rule="evenodd" fill="rgb(115, 71, 193)"
+                                                d="M0.166,7.666 C0.166,11.808 3.524,15.166 7.666,15.166 C11.808,15.166 15.166,11.808 15.166,7.666 C15.166,3.524 11.808,0.165 7.666,0.165 C3.524,0.165 0.166,3.524 0.166,7.666 ZM0.744,7.666 C0.744,6.662 0.960,5.710 1.344,4.849 L4.646,13.895 C2.337,12.773 0.744,10.405 0.744,7.666 ZM7.666,14.587 C6.987,14.587 6.331,14.488 5.711,14.306 L7.788,8.272 L9.916,14.101 C9.930,14.135 9.947,14.165 9.965,14.195 C9.246,14.449 8.472,14.587 7.666,14.587 ZM13.261,7.536 C13.655,6.548 13.788,5.759 13.788,5.056 C13.788,4.802 13.770,4.566 13.740,4.344 C14.280,5.331 14.587,6.462 14.587,7.666 C14.587,10.220 13.204,12.449 11.147,13.648 L13.261,7.536 ZM11.768,5.407 C12.031,5.868 12.339,6.461 12.339,7.316 C12.339,7.909 12.163,8.654 11.812,9.554 L11.122,11.860 L8.620,4.421 C9.038,4.397 9.412,4.355 9.412,4.355 C9.785,4.310 9.740,3.763 9.368,3.784 C9.368,3.784 8.247,3.872 7.523,3.872 C6.843,3.872 5.701,3.784 5.701,3.784 C5.327,3.763 5.284,4.333 5.656,4.355 C5.656,4.355 6.010,4.397 6.383,4.421 L7.460,7.376 L5.946,11.918 L3.425,4.421 C3.842,4.397 4.218,4.355 4.218,4.355 C4.591,4.310 4.545,3.763 4.173,3.784 C4.173,3.784 3.053,3.872 2.328,3.872 C2.198,3.872 2.046,3.869 1.883,3.864 C3.121,1.985 5.249,0.744 7.666,0.744 C9.469,0.744 11.109,1.433 12.340,2.562 C12.311,2.559 12.281,2.556 12.251,2.556 C11.570,2.556 11.089,3.148 11.089,3.784 C11.089,4.355 11.418,4.838 11.768,5.407 Z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                    <a class="card__icon-text" href="#">Plugin</a>
+                                </div>
+                                <div class="card__item-text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the mattis, leo quam aliquet congue.
+                                </div>
+                            </div>
+                            <div class="card__footer">
+                                <a class="card__price" href="#">$20</a>
+                                <div class="card__icons">
+                                    <div class="card__heart-box">
+                                        <a href="#"><span class="lnr lnr-heart "></span></a>
+                                        <span class="card__heart-num shift-num">9</span>
+                                    </div>
+                                    <div href="#" class="card__star">
+                                        <div class="rate-star"></div>
+                                    </div>
+                                    <div class="card__cart-box">
+                                        <a href="#"><span class="lnr lnr-cart "></span></a>
+                                        <span class="card__cart-num shift-num">246</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="followers__item card">
+                            <a class="card__img" href="#"
+                                style="background-image: url(../images/content/product-item.jpg);">
+                                <button>More Info</button>
+                                <button>Live Demo</button>
+                            </a>
+                            <div class="card__info">
+                                <div class="card__info-title">
+                                    E-commerce Shopping Cart
+                                </div>
+                                <div class="card__content">
+                                    <a class="card__avatar" href="#">
+                                        <img class="card__avatar-img" src="images/avatar-featured.png" alt="avatar">
+                                    </a>
+                                    <a class="card__link" href="#">Theme-Valley</a>
+                                    <a class="card__icon" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px">
+                                            <path fill-rule="evenodd" fill="rgb(115, 71, 193)"
+                                                d="M0.166,7.666 C0.166,11.808 3.524,15.166 7.666,15.166 C11.808,15.166 15.166,11.808 15.166,7.666 C15.166,3.524 11.808,0.165 7.666,0.165 C3.524,0.165 0.166,3.524 0.166,7.666 ZM0.744,7.666 C0.744,6.662 0.960,5.710 1.344,4.849 L4.646,13.895 C2.337,12.773 0.744,10.405 0.744,7.666 ZM7.666,14.587 C6.987,14.587 6.331,14.488 5.711,14.306 L7.788,8.272 L9.916,14.101 C9.930,14.135 9.947,14.165 9.965,14.195 C9.246,14.449 8.472,14.587 7.666,14.587 ZM13.261,7.536 C13.655,6.548 13.788,5.759 13.788,5.056 C13.788,4.802 13.770,4.566 13.740,4.344 C14.280,5.331 14.587,6.462 14.587,7.666 C14.587,10.220 13.204,12.449 11.147,13.648 L13.261,7.536 ZM11.768,5.407 C12.031,5.868 12.339,6.461 12.339,7.316 C12.339,7.909 12.163,8.654 11.812,9.554 L11.122,11.860 L8.620,4.421 C9.038,4.397 9.412,4.355 9.412,4.355 C9.785,4.310 9.740,3.763 9.368,3.784 C9.368,3.784 8.247,3.872 7.523,3.872 C6.843,3.872 5.701,3.784 5.701,3.784 C5.327,3.763 5.284,4.333 5.656,4.355 C5.656,4.355 6.010,4.397 6.383,4.421 L7.460,7.376 L5.946,11.918 L3.425,4.421 C3.842,4.397 4.218,4.355 4.218,4.355 C4.591,4.310 4.545,3.763 4.173,3.784 C4.173,3.784 3.053,3.872 2.328,3.872 C2.198,3.872 2.046,3.869 1.883,3.864 C3.121,1.985 5.249,0.744 7.666,0.744 C9.469,0.744 11.109,1.433 12.340,2.562 C12.311,2.559 12.281,2.556 12.251,2.556 C11.570,2.556 11.089,3.148 11.089,3.784 C11.089,4.355 11.418,4.838 11.768,5.407 Z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                    <a class="card__icon-text" href="#">Plugin</a>
+                                </div>
+                                <div class="card__item-text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the mattis, leo quam aliquet congue.
+                                </div>
+                            </div>
+                            <div class="card__footer">
+                                <a class="card__price" href="#">$20</a>
+                                <div class="card__icons">
+                                    <div class="card__heart-box">
+                                        <a href="#"><span class="lnr lnr-heart "></span></a>
+                                        <span class="card__heart-num shift-num">9</span>
+                                    </div>
+                                    <div href="#" class="card__star">
+                                        <div class="rate-star"></div>
+                                    </div>
+                                    <div class="card__cart-box">
+                                        <a href="#"><span class="lnr lnr-cart "></span></a>
+                                        <span class="card__cart-num shift-num">246</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="followers__item card">
+                            <a class="card__img" href="#"
+                                style="background-image: url(../images/content/product-item.jpg);">
+                                <button>More Info</button>
+                                <button>Live Demo</button>
+                            </a>
+                            <div class="card__info">
+                                <div class="card__info-title">
+                                    E-commerce Shopping Cart
+                                </div>
+                                <div class="card__content">
+                                    <a class="card__avatar" href="#">
+                                        <img class="card__avatar-img" src="images/avatar-featured.png" alt="avatar">
+                                    </a>
+                                    <a class="card__link" href="#">Theme-Valley</a>
+                                    <a class="card__icon" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px">
+                                            <path fill-rule="evenodd" fill="rgb(115, 71, 193)"
+                                                d="M0.166,7.666 C0.166,11.808 3.524,15.166 7.666,15.166 C11.808,15.166 15.166,11.808 15.166,7.666 C15.166,3.524 11.808,0.165 7.666,0.165 C3.524,0.165 0.166,3.524 0.166,7.666 ZM0.744,7.666 C0.744,6.662 0.960,5.710 1.344,4.849 L4.646,13.895 C2.337,12.773 0.744,10.405 0.744,7.666 ZM7.666,14.587 C6.987,14.587 6.331,14.488 5.711,14.306 L7.788,8.272 L9.916,14.101 C9.930,14.135 9.947,14.165 9.965,14.195 C9.246,14.449 8.472,14.587 7.666,14.587 ZM13.261,7.536 C13.655,6.548 13.788,5.759 13.788,5.056 C13.788,4.802 13.770,4.566 13.740,4.344 C14.280,5.331 14.587,6.462 14.587,7.666 C14.587,10.220 13.204,12.449 11.147,13.648 L13.261,7.536 ZM11.768,5.407 C12.031,5.868 12.339,6.461 12.339,7.316 C12.339,7.909 12.163,8.654 11.812,9.554 L11.122,11.860 L8.620,4.421 C9.038,4.397 9.412,4.355 9.412,4.355 C9.785,4.310 9.740,3.763 9.368,3.784 C9.368,3.784 8.247,3.872 7.523,3.872 C6.843,3.872 5.701,3.784 5.701,3.784 C5.327,3.763 5.284,4.333 5.656,4.355 C5.656,4.355 6.010,4.397 6.383,4.421 L7.460,7.376 L5.946,11.918 L3.425,4.421 C3.842,4.397 4.218,4.355 4.218,4.355 C4.591,4.310 4.545,3.763 4.173,3.784 C4.173,3.784 3.053,3.872 2.328,3.872 C2.198,3.872 2.046,3.869 1.883,3.864 C3.121,1.985 5.249,0.744 7.666,0.744 C9.469,0.744 11.109,1.433 12.340,2.562 C12.311,2.559 12.281,2.556 12.251,2.556 C11.570,2.556 11.089,3.148 11.089,3.784 C11.089,4.355 11.418,4.838 11.768,5.407 Z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                    <a class="card__icon-text" href="#">Plugin</a>
+                                </div>
+                                <div class="card__item-text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the mattis, leo quam aliquet congue.
+                                </div>
+                            </div>
+                            <div class="card__footer">
+                                <a class="card__price" href="#">$20</a>
+                                <div class="card__icons">
+                                    <div class="card__heart-box">
+                                        <a href="#"><span class="lnr lnr-heart "></span></a>
+                                        <span class="card__heart-num shift-num">9</span>
+                                    </div>
+                                    <div href="#" class="card__star">
+                                        <div class="rate-star"></div>
+                                    </div>
+                                    <div class="card__cart-box">
+                                        <a href="#"><span class="lnr lnr-cart "></span></a>
+                                        <span class="card__cart-num shift-num">246</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="followers__item card">
+                            <a class="card__img" href="#"
+                                style="background-image: url(../images/content/product-item.jpg);">
+                                <button>More Info</button>
+                                <button>Live Demo</button>
+                            </a>
+                            <div class="card__info">
+                                <div class="card__info-title">
+                                    E-commerce Shopping Cart
+                                </div>
+                                <div class="card__content">
+                                    <a class="card__avatar" href="#">
+                                        <img class="card__avatar-img" src="images/avatar-featured.png" alt="avatar">
+                                    </a>
+                                    <a class="card__link" href="#">Theme-Valley</a>
+                                    <a class="card__icon" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px">
+                                            <path fill-rule="evenodd" fill="rgb(115, 71, 193)"
+                                                d="M0.166,7.666 C0.166,11.808 3.524,15.166 7.666,15.166 C11.808,15.166 15.166,11.808 15.166,7.666 C15.166,3.524 11.808,0.165 7.666,0.165 C3.524,0.165 0.166,3.524 0.166,7.666 ZM0.744,7.666 C0.744,6.662 0.960,5.710 1.344,4.849 L4.646,13.895 C2.337,12.773 0.744,10.405 0.744,7.666 ZM7.666,14.587 C6.987,14.587 6.331,14.488 5.711,14.306 L7.788,8.272 L9.916,14.101 C9.930,14.135 9.947,14.165 9.965,14.195 C9.246,14.449 8.472,14.587 7.666,14.587 ZM13.261,7.536 C13.655,6.548 13.788,5.759 13.788,5.056 C13.788,4.802 13.770,4.566 13.740,4.344 C14.280,5.331 14.587,6.462 14.587,7.666 C14.587,10.220 13.204,12.449 11.147,13.648 L13.261,7.536 ZM11.768,5.407 C12.031,5.868 12.339,6.461 12.339,7.316 C12.339,7.909 12.163,8.654 11.812,9.554 L11.122,11.860 L8.620,4.421 C9.038,4.397 9.412,4.355 9.412,4.355 C9.785,4.310 9.740,3.763 9.368,3.784 C9.368,3.784 8.247,3.872 7.523,3.872 C6.843,3.872 5.701,3.784 5.701,3.784 C5.327,3.763 5.284,4.333 5.656,4.355 C5.656,4.355 6.010,4.397 6.383,4.421 L7.460,7.376 L5.946,11.918 L3.425,4.421 C3.842,4.397 4.218,4.355 4.218,4.355 C4.591,4.310 4.545,3.763 4.173,3.784 C4.173,3.784 3.053,3.872 2.328,3.872 C2.198,3.872 2.046,3.869 1.883,3.864 C3.121,1.985 5.249,0.744 7.666,0.744 C9.469,0.744 11.109,1.433 12.340,2.562 C12.311,2.559 12.281,2.556 12.251,2.556 C11.570,2.556 11.089,3.148 11.089,3.784 C11.089,4.355 11.418,4.838 11.768,5.407 Z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                    <a class="card__icon-text" href="#">Plugin</a>
+                                </div>
+                                <div class="card__item-text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the mattis, leo quam aliquet congue.
+                                </div>
+                            </div>
+                            <div class="card__footer">
+                                <a class="card__price" href="#">$20</a>
+                                <div class="card__icons">
+                                    <div class="card__heart-box">
+                                        <a href="#"><span class="lnr lnr-heart "></span></a>
+                                        <span class="card__heart-num shift-num">9</span>
+                                    </div>
+                                    <div href="#" class="card__star">
+                                        <div class="rate-star"></div>
+                                    </div>
+                                    <div class="card__cart-box">
+                                        <a href="#"><span class="lnr lnr-cart "></span></a>
+                                        <span class="card__cart-num shift-num">246</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="followers__item card">
+                            <a class="card__img" href="#"
+                                style="background-image: url(../images/content/product-item.jpg);">
+                                <button>More Info</button>
+                                <button>Live Demo</button>
+                            </a>
+                            <div class="card__info">
+                                <div class="card__info-title">
+                                    E-commerce Shopping Cart
+                                </div>
+                                <div class="card__content">
+                                    <a class="card__avatar" href="#">
+                                        <img class="card__avatar-img" src="images/avatar-featured.png" alt="avatar">
+                                    </a>
+                                    <a class="card__link" href="#">Theme-Valley</a>
+                                    <a class="card__icon" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px">
+                                            <path fill-rule="evenodd" fill="rgb(115, 71, 193)"
+                                                d="M0.166,7.666 C0.166,11.808 3.524,15.166 7.666,15.166 C11.808,15.166 15.166,11.808 15.166,7.666 C15.166,3.524 11.808,0.165 7.666,0.165 C3.524,0.165 0.166,3.524 0.166,7.666 ZM0.744,7.666 C0.744,6.662 0.960,5.710 1.344,4.849 L4.646,13.895 C2.337,12.773 0.744,10.405 0.744,7.666 ZM7.666,14.587 C6.987,14.587 6.331,14.488 5.711,14.306 L7.788,8.272 L9.916,14.101 C9.930,14.135 9.947,14.165 9.965,14.195 C9.246,14.449 8.472,14.587 7.666,14.587 ZM13.261,7.536 C13.655,6.548 13.788,5.759 13.788,5.056 C13.788,4.802 13.770,4.566 13.740,4.344 C14.280,5.331 14.587,6.462 14.587,7.666 C14.587,10.220 13.204,12.449 11.147,13.648 L13.261,7.536 ZM11.768,5.407 C12.031,5.868 12.339,6.461 12.339,7.316 C12.339,7.909 12.163,8.654 11.812,9.554 L11.122,11.860 L8.620,4.421 C9.038,4.397 9.412,4.355 9.412,4.355 C9.785,4.310 9.740,3.763 9.368,3.784 C9.368,3.784 8.247,3.872 7.523,3.872 C6.843,3.872 5.701,3.784 5.701,3.784 C5.327,3.763 5.284,4.333 5.656,4.355 C5.656,4.355 6.010,4.397 6.383,4.421 L7.460,7.376 L5.946,11.918 L3.425,4.421 C3.842,4.397 4.218,4.355 4.218,4.355 C4.591,4.310 4.545,3.763 4.173,3.784 C4.173,3.784 3.053,3.872 2.328,3.872 C2.198,3.872 2.046,3.869 1.883,3.864 C3.121,1.985 5.249,0.744 7.666,0.744 C9.469,0.744 11.109,1.433 12.340,2.562 C12.311,2.559 12.281,2.556 12.251,2.556 C11.570,2.556 11.089,3.148 11.089,3.784 C11.089,4.355 11.418,4.838 11.768,5.407 Z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                    <a class="card__icon-text" href="#">Plugin</a>
+                                </div>
+                                <div class="card__item-text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the mattis, leo quam aliquet congue.
+                                </div>
+                            </div>
+                            <div class="card__footer">
+                                <a class="card__price" href="#">$20</a>
+                                <div class="card__icons">
+                                    <div class="card__heart-box">
+                                        <a href="#"><span class="lnr lnr-heart "></span></a>
+                                        <span class="card__heart-num shift-num">9</span>
+                                    </div>
+                                    <div href="#" class="card__star">
+                                        <div class="rate-star"></div>
+                                    </div>
+                                    <div class="card__cart-box">
+                                        <a href="#"><span class="lnr lnr-cart "></span></a>
+                                        <span class="card__cart-num shift-num">246</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
 
     </main>
-
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
