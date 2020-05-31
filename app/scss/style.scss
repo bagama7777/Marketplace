@@ -452,7 +452,6 @@
     }
 }
 .featured {
-
     &__item {
         font-size: 0;
         border-radius: 4px;
@@ -705,12 +704,12 @@
     }
 }
 .card {
-        max-width: 361px;
-        width: 100%;
-        min-height: 530px;
-        border-radius: 4px;
-        box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
-        
+    max-width: 361px;
+    width: 100%;
+    min-height: 530px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+
     &__img {
         width: 361px;
         height: 230px;
@@ -890,7 +889,7 @@
         // align-items: center;
     }
     &__item {
-          margin-bottom: 4px;
+        margin-bottom: 4px;
     }
     .slick-arrow {
         top: -110px;
@@ -907,3 +906,370 @@
 }
 
 // end followers section
+
+// start fun section
+
+.fun {
+    background-color: #212225;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 100px 0;
+    }
+    &__item {
+        width: 170px;
+        height: 163px;
+        text-align: center;
+    }
+    &__icon {
+        display: block;
+        font-size: 48px;
+    }
+    &__num--bc,
+    .lnr-briefcase {
+        color: #feb71d;
+    }
+    &__num--cd,
+    .lnr-cloud-download {
+        color: #58c9e9;
+    }
+    &__num--sm,
+    .lnr-smile {
+        color: #77de51;
+    }
+    &__num--us,
+    .lnr-users {
+        color: #ff6a6d;
+    }
+
+    &__num {
+        display: block;
+        font-size: 36px;
+        // line-height: 36px;
+        padding-top: 50px;
+        padding-bottom: 10px;
+    }
+    &__text {
+        display: block;
+        font-size: 18px;
+        line-height: 36px;
+        color: #fff;
+    }
+}
+
+// end fun section
+
+// start why-choose section
+
+.why-choose {
+    background-color: #fff;
+    &__inner {
+        padding-top: 110px;
+        padding-bottom: 120px;
+        text-align: center;
+    }
+    &__title {
+        font-size: 36px;
+        color: #000;
+        padding: 10px 0;
+        span {
+            color: $blue;
+        }
+    }
+    &__text {
+        font-size: 16px;
+        line-height: 30px;
+        color: #555555;
+        width: 700px;
+        padding: 15px 0 25px;
+        margin: 0 auto;
+    }
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    &__item {
+        width: 361px;
+        margin-top: 30px;
+        border-radius: 4px;
+        box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+        padding: 20px 20px 60px 20px;
+    }
+    &__num {
+        font-size: 48px;
+        color: rgba(92, 135, 248, 0.2);
+        display: block;
+        text-align: left;
+    }
+    &__icon {
+        margin-bottom: 45px;
+        display: block;
+    }
+    .lnr {
+        font-size: 60px;
+    }
+    .lnr-license {
+        color: $blue;
+    }
+    .lnr-magic-wand {
+        color: #7f4ec2;
+    }
+    .lnr-lock {
+        color: #77de51;
+    }
+    .lnr-chart-bars {
+        color: #feb71d;
+    }
+    .lnr-leaf {
+        color: #58c9e9;
+    }
+    .lnr-phone {
+        color: #ff6a6d;
+    }
+    &__item-title {
+        font-size: 24px;
+        margin-bottom: 25px;
+        display: block;
+    }
+    &__item-text {
+        font-size: 16px;
+        color: #555555;
+        display: block;
+        padding: 0 10px;
+    }
+}
+
+// end why-choose section
+
+// start sell-buy section
+
+.sell-buy {
+    &__inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    &__item {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 561px;
+        padding: 100px 0;
+    }
+    &__title {
+        font-size: 36px;
+        color: #fff;
+        margin-top: 40px;
+        padding: 10px 0;
+    }
+    &__text {
+        font-size: 16px;
+        line-height: 30px;
+        color: #fff;
+        width: 580px;
+        margin: 0 auto;
+        padding: 15px 0;
+    }
+    &__btn {
+        width: 190px;
+        padding: 27.5px 0;
+        font-size: 16px;
+        line-height: 0;
+        background-color: #fff;
+        border-radius: 40px;
+        margin-top: 25px;
+        transition: all 0.3s;
+    }
+    &__btn--sell {
+        color: $blue;
+        &:hover {
+            color: #fff;
+            background-color: #a1bdff;
+        }
+    }
+    &__btn--buy {
+        color: #7347c1;
+        &:hover {
+            color: #fff;
+            background-color: #d199ff;
+        }
+    }
+}
+
+// end sell-buy section
+
+// start feedback section
+
+.feedback {
+    background-color: #fff;
+    &__inner {
+        padding: 120px 0;
+        text-align: center;
+    }
+    &__title {
+        font-size: 36px;
+        margin-bottom: 25px;
+        span {
+            color: $blue;
+        }
+    }
+    &__text {
+        font-size: 16px;
+        color: #555555;
+        line-height: 30px;
+        width: 700px;
+        margin: 0 auto;
+    }
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 60px 0;
+    }
+    &__item {
+        padding: 50px 35px 47px 38px;
+        border-left: 2px solid $blue;
+        border-radius: 4px;
+        box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+        width: 555px;
+        text-align: left;
+    }
+    &__profile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 24px;
+    }
+    &__avatar {
+        line-height: 0;
+    }
+    &__client {
+        margin-left: 20px;
+        margin-right: auto;
+    }
+    &__name {
+        font-size: 20px;
+    }
+    &__position {
+        font-size: 16px;
+        color: #555555;
+        display: block;
+    }
+    &__icon {
+    }
+    .lnr-bubble {
+        font-size: 60px;
+        color: #e8e8e8;
+    }
+    &__item-text {
+        font-size: 16px;
+        line-height: 30px;
+        color: #555555;
+    }
+    &__btn {
+        font-size: 16px;
+        line-height: 0;
+        color: #fff;
+        width: 190px;
+        padding: 27.5px 0;
+        background-color: $blue;
+        border-radius: 40px;
+        transition: all 0.3s;
+        &:hover {
+            color: #fff;
+            background-color: $dblue;
+        }
+    }
+}
+
+// end feedback section
+
+// start news section
+
+.news {
+    background-color: #eff1f5;
+    &__inner {
+        padding: 120px 0;
+        text-align: center;
+    }
+    &__title {
+        font-size: 36px;
+        margin-bottom: 25px;
+        span {
+            color: $blue;
+        }
+    }
+    &__text {
+        font-size: 16px;
+        color: #555555;
+        line-height: 30px;
+        width: 700px;
+        margin: 0 auto;
+    }
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 60px 0;
+    }
+    &__item {
+        border-radius: 4px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+        width: 361px;
+        min-height: 475px;
+        text-align: left;
+    }
+    &__info {
+        max-width: 361px;
+    }
+    &__item-title {
+        @include f500;
+        font-size: 22px;
+        padding: 26px 17px 26px 27px;
+    }
+    &__item-text {
+        font-size: 16px;
+        line-height: 30px;
+        color: #555555;
+        padding: 0 17px 24px 27px;
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0 8px 0;
+        border-top: 1px solid #ececec;
+    }
+    &__data {
+        color: #999999;
+        padding-left: 27px;
+        border-right: 1px solid #ececec;
+        width: 50%;
+    }
+    .lnr-clock {
+        font-size: 15px;
+        color: $blue;
+    }
+    &__responses {
+        margin-right: 30px;
+        color: #7e7e7e;
+        font-size: 0;
+    }
+    .lnr-bubble,
+    .lnr-eye {
+        font-size: 15px;
+        margin-left: 30px;
+    }
+    &__num {
+        font-size: 15px;
+        margin-left: 7px;
+    }
+}
+
+// end news section
