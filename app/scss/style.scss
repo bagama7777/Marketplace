@@ -18,6 +18,8 @@
         margin-left: 7px;
     }
     &__btn {
+        display: inline-block;
+        text-decoration: none;
         margin-left: auto;
         margin-right: 50px;
         // font-family: "MyriadPro-Regular";
@@ -48,6 +50,8 @@
         width: 120px;
         a {
             line-height: 0;
+            display: inline-block;
+            text-decoration: none;
         }
     }
     .lnr {
@@ -110,7 +114,8 @@
         align-items: center;
     }
     &__name {
-        // font-family: "MyriadPro-Regular";
+        display: inline-block;
+        text-decoration: none;
         font-size: 16px;
         font-weight: 500;
         line-height: 22px;
@@ -118,8 +123,6 @@
         padding-top: 5px;
     }
     &__balance {
-        // font-family: "MyriadPro-Regular";
-        // font-size: 15px;
         font-weight: 400;
         line-height: 22px;
         color: $blue;
@@ -134,6 +137,9 @@
     justify-content: space-between;
     min-height: 80px;
     align-items: center;
+    &__list {
+        list-style: none;
+    }
     &__item {
         display: inline-block;
         & + & {
@@ -141,6 +147,8 @@
         }
     }
     &__link {
+        display: inline-block;
+        text-decoration: none;
         @include f500;
         font-size: 15px;
         line-height: 42px;
@@ -164,7 +172,7 @@
         border-style: solid;
         display: block;
         width: 100%;
-        height: 44px;
+        height: 46px;
         border-radius: 25px;
         outline: none;
         font-size: 15px;
@@ -183,7 +191,7 @@
         right: 0;
         top: 0;
         width: 70px;
-        height: 44px;
+        height: 46px;
         outline: none;
         cursor: pointer;
         transition: all 0.3s;
@@ -209,10 +217,10 @@
     width: 100%;
     height: 726px;
     background-image: linear-gradient(
-        180deg,
-        rgba(0, 48, 222, 0.8) 0%,
-        rgba(23, 69, 237, 0.8) 54%,
-        rgba(46, 90, 251, 0.8) 100%
+        270deg,
+        rgba(0, 48, 222, 0.93) 0%,
+        rgba(23, 69, 237, 0.93) 54%,
+        rgba(46, 90, 251, 0.93) 100%
     );
     &__inner {
         padding-top: 150px;
@@ -223,6 +231,7 @@
         font-size: 60px;
         line-height: 70px;
         color: #f3f3f8;
+        text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
         span {
             display: inline-block;
             @include f700;
@@ -239,7 +248,9 @@
         font-size: 16px;
         color: #fff;
         background: transparent;
-        padding: 20px 38px;
+        width: 190px;
+        line-height: 0;
+        padding: 26.5px 0;
         border: 1px solid #fff;
         border-radius: 30px;
         cursor: pointer;
@@ -265,7 +276,7 @@
         z-index: 7;
     }
     &__search-form {
-        max-width: 810px;
+        max-width: 805px;
         width: 100%;
         display: block;
         position: relative;
@@ -285,7 +296,7 @@
     }
     &__button {
         height: 55px;
-        max-width: 225px;
+        max-width: 223px;
         width: 100%;
         background-color: $blue;
         color: #fff;
@@ -304,11 +315,12 @@
         top: 0;
         border-left: 1px solid #dcdcdc;
         height: 55px;
-        width: 200px;
+        width: 195px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 0 20px;
+        text-decoration: none;
     }
     &__category-link {
         color: #555555;
@@ -383,29 +395,6 @@
 
 .featured {
     background-color: #eff1f5;
-    // &__inner {
-    //     padding: 120px 0;
-    // }
-    // &__header {
-    //     display: flex;
-    //     justify-content: space-between;
-    //     align-items: center;
-    //     padding: 32px 30px;
-    //     background-color: #fff;
-    //     box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
-    //     border-radius: 4px;
-    //     margin-bottom: 46px;
-    // }
-    // &__title {
-    //     font-size: 30px;
-    // }
-
-    // &__btn {
-    //     width: 110px;
-    //     height: 45px;
-    //     background-color: #7347c1;
-    //     border-radius: 25px;
-    // }
 }
 .heading {
     padding: 120px 0;
@@ -535,6 +524,8 @@
     &__link {
         margin-left: 9px;
         color: #000;
+        display: inline-block;
+        text-decoration: none;
     }
     &__icon {
         line-height: 0;
@@ -543,6 +534,8 @@
     &__text {
         margin-left: 9px;
         color: #7347c1;
+        display: inline-block;
+        text-decoration: none;
     }
     &__info-text {
         font-size: 16px;
@@ -588,8 +581,10 @@
     &__price {
         @include f500;
         color: #fff;
-        line-height: 30px;
-        padding: 0 18px;
+        display: inline-block;
+        text-decoration: none;
+        line-height: 0;
+        padding: 16px 18.5px;
         background-color: $blue;
         border-radius: 15px;
         transition: all 0.3s;
@@ -602,6 +597,10 @@
         font-size: 0;
         margin-right: auto;
         margin-left: 0;
+        a {
+            display: inline-block;
+            text-decoration: none;
+        }
     }
     .lnr {
         margin-left: 20px;
@@ -716,6 +715,7 @@
         align-items: center;
         font-size: 0;
         text-align: center;
+        text-decoration: none;
         &:hover {
             background-image: linear-gradient(
                 180deg,
@@ -771,6 +771,8 @@
     &__link {
         margin-left: 7px;
         color: #000;
+        display: inline-block;
+        text-decoration: none;
     }
     &__icon {
         margin-left: 30px;
@@ -778,6 +780,8 @@
     &__icon-text {
         color: #7347c1;
         margin-left: 9px;
+        display: inline-block;
+        text-decoration: none;
     }
     &__item-text {
         font-size: 16px;
@@ -802,6 +806,8 @@
         border-radius: 15px;
         padding: 0 17px;
         transition: all 0.3s;
+        display: inline-block;
+        text-decoration: none;
         &:hover {
             background-color: $dblue;
             color: #fff;
@@ -815,6 +821,10 @@
         font-size: 0;
         margin-left: 0;
         margin-right: auto;
+        a {
+            display: inline-block;
+            text-decoration: none;
+        }
     }
     .lnr-heart {
         font-size: 15px;
@@ -848,7 +858,9 @@
         text-align: center;
         button {
             font-size: 16px;
-            padding: 21px 33px;
+            width: 190px;
+            line-height: 0;
+            padding: 27.5px 0;
             color: #747b86;
             background-color: #f1f3f6;
             border: none;
@@ -920,6 +932,8 @@
     &__icon {
         display: block;
         font-size: 48px;
+        display: inline-block;
+        text-decoration: none;
     }
     &__num--bc,
     .lnr-briefcase {
@@ -941,9 +955,9 @@
     &__num {
         display: block;
         font-size: 36px;
-        // line-height: 36px;
         padding-top: 50px;
         padding-bottom: 10px;
+        text-decoration: none;
     }
     &__text {
         display: block;
@@ -1002,6 +1016,7 @@
     &__icon {
         margin-bottom: 45px;
         display: block;
+        text-decoration: none;
     }
     .lnr {
         font-size: 60px;
@@ -1028,6 +1043,7 @@
         font-size: 24px;
         margin-bottom: 25px;
         display: block;
+        text-decoration: none;
     }
     &__item-text {
         font-size: 16px;
@@ -1085,6 +1101,8 @@
         padding: 15px 0;
     }
     &__btn {
+        display: inline-block;
+        text-decoration: none;
         width: 190px;
         padding: 27.5px 0;
         font-size: 16px;
@@ -1163,11 +1181,17 @@
     }
     &__name {
         font-size: 20px;
+        display: inline-block;
+        text-decoration: none;
     }
     &__position {
         font-size: 16px;
         color: #555555;
         display: block;
+    }
+    &__icon {
+        display: inline-block;
+        text-decoration: none;
     }
     .lnr-bubble {
         font-size: 60px;
@@ -1179,6 +1203,8 @@
         color: #555555;
     }
     &__btn {
+        display: inline-block;
+        text-decoration: none;
         font-size: 16px;
         line-height: 0;
         color: #fff;
@@ -1258,6 +1284,10 @@
         padding-left: 27px;
         border-right: 1px solid #ececec;
         width: 50%;
+        a {
+            display: inline-block;
+            text-decoration: none;
+        }
     }
     .lnr-clock {
         font-size: 15px;
@@ -1267,6 +1297,10 @@
         margin-right: 30px;
         color: #7e7e7e;
         font-size: 0;
+        a {
+            display: inline-block;
+            text-decoration: none;
+        }
     }
     .lnr-bubble,
     .lnr-eye {
@@ -1293,10 +1327,18 @@
         width: 50%;
         padding: 60px 125px 60px 85px;
         border-right: 1px solid #e8eaf3;
+        a {
+            display: inline-block;
+            text-decoration: none;
+        }
     }
     &__support {
         width: 50%;
         padding: 60px 150px 60px 125px;
+        a {
+            display: inline-block;
+            text-decoration: none;
+        }
     }
     &__image {
         margin-bottom: 25px;
@@ -1339,6 +1381,8 @@
         margin-bottom: 48px;
     }
     &__btn {
+        display: inline-block;
+        text-decoration: none;
         font-size: 16px;
         line-height: 0;
         color: $blue;
@@ -1396,6 +1440,8 @@
     &__phone-link,
     &__mail-link,
     &__address-link {
+        display: inline-block;
+        text-decoration: none;
         color: #ababab;
         line-height: 26px;
         padding-left: 28px;
@@ -1409,6 +1455,9 @@
         }
     }
     &__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
         padding-top: 9px;
     }
     &__title {
@@ -1432,8 +1481,15 @@
     }
     &__news-list {
         margin-top: 48px;
+        padding: 0;
+        list-style: none;
         li {
             display: inline-block;
+            list-style: none;
+            a {
+                display: inline-block;
+                text-decoration: none;
+            }
             & + li {
                 margin-left: 10px;
             }

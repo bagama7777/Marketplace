@@ -7,18 +7,6 @@ html {
     box-sizing: inherit;
 }
 
-a {
-    display: inline-block;
-    text-decoration: none;
-}
-
-ul,
-li {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
 body {
     @include f400;
     font-size: 15px;
@@ -41,9 +29,4 @@ body {
     margin-left: 9px;
 }
 
-// .title{
-//     font-size: 30px;
-//     line-height: 28px;
-//     color: #000;
-// }
 
