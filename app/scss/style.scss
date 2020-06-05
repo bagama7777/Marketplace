@@ -1,9 +1,7 @@
 @import "fonts";
 @import "vars";
 @import "global";
-
 // start header section
-
 .header {
     &__top {
         background-color: $lgrey;
@@ -16,20 +14,19 @@
     }
     &__logo-link {
         margin-left: 7px;
+        line-height: 0;
     }
     &__btn {
         display: inline-block;
         text-decoration: none;
         margin-left: auto;
         margin-right: 50px;
-        // font-family: "MyriadPro-Regular";
         font-size: 14px;
-        // font-weight: 400;
         line-height: 28px;
-        padding: 4px;
-        width: 140px;
+        padding: 4px 15px;
+        min-width: 140px;
         background: $blue;
-        border-radius: 16px;
+        border-radius: 26px;
         text-align: center;
         color: #fff;
         box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
@@ -58,6 +55,14 @@
         color: #7e8fa1;
         font-size: 20px;
         position: relative;
+    }
+    .lnr-alarm,
+    .lnr-envelope,
+    .lnr-cart {
+        transition: all 0.3s;
+        &:hover {
+            color: #ff6a6c;
+        }
     }
     .lnr-alarm {
         &::after {
@@ -101,6 +106,14 @@
             left: 12px;
         }
     }
+    .lnr-alarm::after,
+    .lnr-envelope::after,
+    .lnr-cart::after {
+        transition: all 0.3s;
+        &:hover {
+            color: #ff6a6c;
+        }
+    }
     &__info {
         display: flex;
         justify-content: space-between;
@@ -139,11 +152,13 @@
     align-items: center;
     &__list {
         list-style: none;
+        margin: 0;
+        padding: 0;
     }
     &__item {
         display: inline-block;
-        & + & {
-            margin-left: 25px;
+        &+& {
+            margin-left: 29px;
         }
     }
     &__link {
@@ -155,7 +170,7 @@
         color: $dgrey;
         text-transform: uppercase;
         border-radius: 14px;
-        padding: 0 4px;
+        // padding: 0 4px;
         transition: all 0.3s;
         &:hover {
             box-shadow: 0px 4px 10px 0px rgba(52, 91, 229, 0.18);
@@ -179,8 +194,12 @@
         line-height: 30px;
         padding-left: 25px;
         padding-right: 80px;
+        transition: all 0.3s;
         &::placeholder {
             color: #898f96;
+        }
+        &:hover {
+            box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.1);
         }
     }
     &__button {
@@ -209,21 +228,14 @@
 }
 
 // end header section
-
 // start  main-screen section
-
 .main-screen {
     position: relative;
     width: 100%;
     height: 726px;
-    background-image: linear-gradient(
-        270deg,
-        rgba(0, 48, 222, 0.93) 0%,
-        rgba(23, 69, 237, 0.93) 54%,
-        rgba(46, 90, 251, 0.93) 100%
-    );
+    background-image: linear-gradient( 270deg, rgba(0, 48, 222, 0.93) 0%, rgba(23, 69, 237, 0.93) 54%, rgba(46, 90, 251, 0.93) 100%);
     &__inner {
-        padding-top: 150px;
+        padding-top: 170px;
         padding-bottom: 200px;
         text-align: center;
     }
@@ -242,15 +254,16 @@
         font-size: 20px;
         line-height: 72px;
         color: #f3f3f8;
+        padding-top: 10px;
     }
     .button {
-        margin: 50px 15px 0;
+        margin: 43px 15px 0;
         font-size: 16px;
         color: #fff;
         background: transparent;
-        width: 190px;
+        min-width: 190px;
         line-height: 0;
-        padding: 26.5px 0;
+        padding: 26.5px 20px;
         border: 1px solid #fff;
         border-radius: 30px;
         cursor: pointer;
@@ -296,8 +309,7 @@
     }
     &__button {
         height: 55px;
-        max-width: 223px;
-        width: 100%;
+        min-width: 223px;
         background-color: $blue;
         color: #fff;
         border: none;
@@ -313,7 +325,7 @@
         position: absolute;
         right: 0;
         top: 0;
-        border-left: 1px solid #dcdcdc;
+        border: 1px solid #dcdcdc;
         height: 55px;
         width: 195px;
         display: flex;
@@ -321,15 +333,22 @@
         align-items: center;
         padding: 0 20px;
         text-decoration: none;
-    }
-    &__category-link {
         color: #555555;
+        outline: none;
+        option:active {
+            outline: none;
+            border: none;
+            // background-color: red;
+            padding: 10px 0;
+        }
     }
+    // &__category-link {
+    //     color: #555555;
+    // }
     .lnr-chevron-down {
         font-size: 12px;
         color: #676767;
     }
-
     &__shadow-block {
         position: absolute;
         border-radius: 6px;
@@ -352,9 +371,7 @@
 }
 
 // end main-screen section
-
 // start advantages section
-
 .advantages {
     background-color: #fff;
     &__inner {
@@ -381,6 +398,7 @@
         font-size: 24px;
         color: #000;
         padding-bottom: 20px;
+        margin-top: 33px;
     }
     &__text {
         font-size: 16px;
@@ -390,14 +408,13 @@
 }
 
 // end advantages section
-
 // start featured section
-
 .featured {
     background-color: #eff1f5;
 }
+
 .heading {
-    padding: 120px 0;
+    padding: 120px 0 120px;
     &__header {
         display: flex;
         justify-content: space-between;
@@ -406,12 +423,11 @@
         background-color: #fff;
         box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
         border-radius: 4px;
-        margin-bottom: 46px;
+        margin-bottom: 50px;
     }
     &__title {
         font-size: 30px;
     }
-
     &__btn {
         width: 110px;
         height: 45px;
@@ -423,23 +439,23 @@
         font-size: 14px;
         color: #fff;
     }
-
     .slick-arrow {
         position: absolute;
         z-index: 15;
-        top: -108px;
+        top: -114px;
         border: none;
         outline: none;
         cursor: pointer;
         background: transparent;
     }
     .slick-prev {
-        right: 107px;
+        right: 101px;
     }
     .slick-next {
-        right: 49px;
+        right: 43px;
     }
 }
+
 .featured {
     &__item {
         font-size: 0;
@@ -460,12 +476,7 @@
         width: 100%;
         min-height: 450px;
         &:hover {
-            background-image: linear-gradient(
-                180deg,
-                rgba(6, 116, 236, 0.9) 0%,
-                rgba(61, 94, 215, 0.9) 46%,
-                rgba(115, 71, 193, 0.9) 100%
-            ) !important;
+            background-image: linear-gradient( 180deg, rgba(6, 116, 236, 0.9) 0%, rgba(61, 94, 215, 0.9) 46%, rgba(115, 71, 193, 0.9) 100%) !important;
         }
         .button-info {
             top: calc(100% / 2 - 22.5px);
@@ -541,21 +552,22 @@
         font-size: 16px;
         line-height: 30px;
         padding-top: 25px;
-        padding-bottom: 30px;
+        padding-bottom: 34px;
     }
     &__info-btn {
         display: flex;
         justify-content: flex-start;
         align-items: center;
         margin-bottom: 44px;
-        & div + div {
+        & div+div {
             margin-left: 7px;
         }
         & div {
             line-height: 30px;
             color: #868c96;
             background-color: #f1f3f6;
-            padding: 0 15px;
+            padding-right: 15px;
+            padding-left: 18px;
             border-radius: 15px;
             cursor: pointer;
         }
@@ -575,7 +587,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 24px 0;
+        padding: 22px 0 22px 3px;
         border-top: 1px solid #ececec;
     }
     &__price {
@@ -584,10 +596,12 @@
         display: inline-block;
         text-decoration: none;
         line-height: 0;
-        padding: 16px 18.5px;
+        min-width: 100px;
+        padding: 16px 15px;
         background-color: $blue;
         border-radius: 15px;
         transition: all 0.3s;
+        text-align: center;
         &:hover {
             background-color: $dblue;
         }
@@ -624,9 +638,7 @@
 }
 
 // end featured section
-
 // start products section
-
 .products {
     background-color: #f6f7fb;
     padding: 120px 0;
@@ -639,6 +651,7 @@
         box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
         border-radius: 4px;
         margin-bottom: 30px;
+        height: 110px;
     }
     &__title {
         font-size: 30px;
@@ -651,11 +664,58 @@
         margin-left: auto;
         margin-right: 25px;
     }
+    &__list {
+        display: none;
+    }
     &__btn {
         background-image: url(../images/products-menu-btn.png);
         width: 5px;
         height: 20px;
         cursor: pointer;
+        position: relative;
+        transition: all .3s;
+    }
+    &__btn.list {
+        background-image: url(../images/products-menu-btn-red.png);
+    }
+    .list {
+        .products__list {
+            display: block;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            border-radius: 3px;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
+            position: absolute;
+            right: -23px;
+            top: 43px;
+            width: 183px;
+            height: 179px;
+            transition: all .3s;
+            &::before {
+                content: "";
+                position: absolute;
+                background-image: url(../images/icons/polygon1.png);
+                right: 17px;
+                top: -13px;
+                width: 18px;
+                height: 16px;
+                z-index: 55;
+                box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
+            }
+            li {
+                padding-left: 28px;
+                line-height: 28px;
+                position: relative;
+                &:hover {
+                    color: $blue;
+                }
+            }
+            li:first-child {
+                padding-top: 20px;
+            }
+        }
     }
     &__inner-btn {
         font-size: 0;
@@ -663,7 +723,7 @@
         background-color: #fff;
         border-radius: 4px;
         box-shadow: 0px 1px 2px 0px rgba(90, 93, 100, 0.1);
-        margin-bottom: 51px;
+        margin-bottom: 50px;
         button {
             @include f500;
             font-size: 15px;
@@ -680,8 +740,8 @@
                 color: #fff;
                 background-color: #747b86;
             }
-            & + button {
-                margin-left: 10px;
+            &+button {
+                margin-left: 7px;
             }
             &.mixitup-control-active {
                 background-color: $blue;
@@ -693,19 +753,19 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        margin-bottom: 30px;
+        margin-bottom: 28px;
     }
     &__item {
         margin-bottom: 30px;
     }
 }
+
 .card {
     max-width: 361px;
     width: 100%;
     min-height: 530px;
     border-radius: 4px;
     box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
-
     &__img {
         width: 361px;
         height: 230px;
@@ -717,12 +777,7 @@
         text-align: center;
         text-decoration: none;
         &:hover {
-            background-image: linear-gradient(
-                180deg,
-                rgba(6, 116, 236, 0.9) 0%,
-                rgba(61, 94, 215, 0.9) 46%,
-                rgba(115, 71, 193, 0.9) 100%
-            ) !important;
+            background-image: linear-gradient( 180deg, rgba(6, 116, 236, 0.9) 0%, rgba(61, 94, 215, 0.9) 46%, rgba(115, 71, 193, 0.9) 100%) !important;
             border-radius: 4px;
         }
         &:hover button {
@@ -745,12 +800,13 @@
                 color: $blue;
             }
         }
-        button + button {
+        button+button {
             margin-left: 11px;
         }
     }
     &__info {
-        padding: 30px;
+        padding: 26px 30px 10px;
+        background-color: #fff;
     }
     &__info-title {
         @include f500;
@@ -775,7 +831,7 @@
         text-decoration: none;
     }
     &__icon {
-        margin-left: 30px;
+        margin-left: 19px;
     }
     &__icon-text {
         color: #7347c1;
@@ -787,7 +843,7 @@
         font-size: 16px;
         color: #555555;
         line-height: 30px;
-        margin-top: 18px;
+        margin-top: 26px;
         margin-bottom: 18px;
     }
     &__footer {
@@ -797,6 +853,7 @@
         padding: 16px 30px;
         border-top: 1px solid #ececec;
         line-height: 0;
+        background-color: #fff;
     }
     &__price {
         @include f500;
@@ -853,14 +910,15 @@
         color: $blue;
     }
 }
+
 .products {
     &__bottom-btn {
         text-align: center;
         button {
             font-size: 16px;
-            width: 190px;
+            min-width: 190px;
             line-height: 0;
-            padding: 27.5px 0;
+            padding: 27.5px 20px;
             color: #747b86;
             background-color: #f1f3f6;
             border: none;
@@ -881,9 +939,7 @@
 }
 
 // end products section
-
 // start followers section
-
 .followers {
     background-color: #eff1f5;
     &__btn {
@@ -899,7 +955,7 @@
         margin-bottom: 4px;
     }
     .slick-arrow {
-        top: -110px;
+        top: -113px;
     }
     .slick-prev {
         right: 101px;
@@ -913,19 +969,19 @@
 }
 
 // end followers section
-
 // start fun section
-
 .fun {
     background-color: #212225;
+    height: 350px;
     &__inner {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 100px 0;
+        padding: 91px 0;
     }
     &__item {
-        width: 170px;
+        // width: 145px;
+        width: fit-content;
         height: 163px;
         text-align: center;
     }
@@ -951,26 +1007,23 @@
     .lnr-users {
         color: #ff6a6d;
     }
-
     &__num {
         display: block;
         font-size: 36px;
-        padding-top: 50px;
+        padding-top: 44px;
         padding-bottom: 10px;
         text-decoration: none;
     }
     &__text {
         display: block;
         font-size: 18px;
-        line-height: 36px;
+        line-height: 37px;
         color: #fff;
     }
 }
 
 // end fun section
-
 // start why-choose section
-
 .why-choose {
     background-color: #fff;
     &__inner {
@@ -1002,10 +1055,11 @@
     }
     &__item {
         width: 361px;
+        height: 375px;
         margin-top: 30px;
         border-radius: 4px;
         box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
-        padding: 20px 20px 60px 20px;
+        padding: 28px 20px 60px 20px;
     }
     &__num {
         font-size: 48px;
@@ -1014,7 +1068,7 @@
         text-align: left;
     }
     &__icon {
-        margin-bottom: 45px;
+        margin-bottom: 40px;
         display: block;
         text-decoration: none;
     }
@@ -1047,6 +1101,7 @@
     }
     &__item-text {
         font-size: 16px;
+        line-height: 30px;
         color: #555555;
         display: block;
         padding: 0 10px;
@@ -1054,9 +1109,7 @@
 }
 
 // end why-choose section
-
 // start sell-buy section
-
 .sell-buy {
     &__inner {
         display: flex;
@@ -1089,7 +1142,7 @@
     &__title {
         font-size: 36px;
         color: #fff;
-        margin-top: 40px;
+        margin-top: 35px;
         padding: 10px 0;
     }
     &__text {
@@ -1098,13 +1151,13 @@
         color: #fff;
         width: 580px;
         margin: 0 auto;
-        padding: 15px 0;
+        padding: 18px 0;
     }
     &__btn {
         display: inline-block;
         text-decoration: none;
-        width: 190px;
-        padding: 27.5px 0;
+        min-width: 190px;
+        padding: 27.5px 20px;
         font-size: 16px;
         line-height: 0;
         background-color: #fff;
@@ -1129,9 +1182,7 @@
 }
 
 // end sell-buy section
-
 // start feedback section
-
 .feedback {
     background-color: #fff;
     &__inner {
@@ -1151,12 +1202,13 @@
         line-height: 30px;
         width: 700px;
         margin: 0 auto;
+        padding-top: 4px;
     }
     &__items {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 60px 0;
+        padding: 56px 0;
     }
     &__item {
         padding: 50px 35px 47px 38px;
@@ -1170,7 +1222,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 24px;
+        margin-bottom: 20px;
     }
     &__avatar {
         line-height: 0;
@@ -1208,8 +1260,8 @@
         font-size: 16px;
         line-height: 0;
         color: #fff;
-        width: 190px;
-        padding: 27.5px 0;
+        min-width: 190px;
+        padding: 27.5px 20px;
         background-color: $blue;
         border-radius: 40px;
         transition: all 0.3s;
@@ -1221,9 +1273,7 @@
 }
 
 // end feedback section
-
 // start news section
-
 .news {
     background-color: #eff1f5;
     &__inner {
@@ -1232,7 +1282,7 @@
     }
     &__title {
         font-size: 36px;
-        margin-bottom: 25px;
+        margin-bottom: 30px;
         span {
             color: $blue;
         }
@@ -1248,7 +1298,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-top: 60px;
+        padding-top: 56px;
     }
     &__item {
         border-radius: 4px;
@@ -1264,19 +1314,20 @@
     &__item-title {
         @include f500;
         font-size: 22px;
-        padding: 26px 17px 26px 27px;
+        padding: 19px 17px 18px 28px;
+        line-height: 27px;
     }
     &__item-text {
         font-size: 16px;
         line-height: 30px;
         color: #555555;
-        padding: 0 17px 24px 27px;
+        padding: 0 25px 24px 28px;
     }
     &__content {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 10px 0 8px 0;
+        padding: 18px 0 8px 0;
         border-top: 1px solid #ececec;
     }
     &__data {
@@ -1314,9 +1365,7 @@
 }
 
 // end news section
-
 // start support section
-
 .guarantee-support {
     background-color: #fff;
     &__inner {
@@ -1355,20 +1404,14 @@
 }
 
 // end support section
-
 // start join section
-
 .join {
     width: 100%;
     min-height: 400px;
-    background-image: linear-gradient(
-        -90deg,
-        rgba(13, 62, 242, 0.9) 0%,
-        rgba(64, 48, 201, 0.9) 46%,
-        rgba(114, 33, 160, 0.9) 100%
-    );
+    background-image: linear-gradient( -90deg, rgba(13, 62, 242, 0.9) 0%, rgba(64, 48, 201, 0.9) 46%, rgba(114, 33, 160, 0.9) 100%);
     &__inner {
-        padding: 100px 0;
+        padding-top: 116px;
+        padding-bottom: 100px;
         text-align: center;
         color: #fff;
     }
@@ -1388,8 +1431,8 @@
         color: $blue;
         background-color: #fff;
         border-radius: 40px;
-        width: 190px;
-        padding: 27.5px 0;
+        min-width: 190px;
+        padding: 27.5px 20px;
         transition: all 0.3s;
         &:hover {
             color: #fff;
@@ -1399,15 +1442,14 @@
 }
 
 // end join section
-
 // start footer section
-
 .footer {
     &__content {
         background-color: #262b30;
+        height: 525px;
     }
     &__inner {
-        padding: 87px 0 110px 0;
+        padding: 117px 0 110px 0;
     }
     &__items {
         display: flex;
@@ -1417,7 +1459,7 @@
         width: 280px;
     }
     &__text {
-        padding: 10px 0;
+        padding: 19px 0 10px;
         line-height: 28px;
         color: #ababab;
     }
@@ -1425,7 +1467,7 @@
     &__mail,
     &__address {
         position: relative;
-        padding-top: 6px;
+        padding-top: 10px;
     }
     .lnr {
         position: absolute;
@@ -1458,7 +1500,7 @@
         margin: 0;
         padding: 0;
         list-style: none;
-        padding-top: 9px;
+        padding-top: 14px;
     }
     &__title {
         font-size: 18px;
@@ -1490,7 +1532,7 @@
                 display: inline-block;
                 text-decoration: none;
             }
-            & + li {
+            &+li {
                 margin-left: 10px;
             }
         }
@@ -1567,6 +1609,7 @@
         }
     }
 }
+
 .search-form {
     max-width: 360px;
     width: 100%;
@@ -1598,7 +1641,8 @@
         border-radius: 25px;
         right: -2px;
         top: 0;
-        width: 110px;
+        min-width: 110px;
+        padding: 0 15px;
         height: 50px;
         outline: none;
         cursor: pointer;
