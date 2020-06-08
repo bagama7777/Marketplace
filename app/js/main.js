@@ -30,7 +30,7 @@ $(function() {
     });
 
 
-    $('.products__btn').on('click', function() {
+    $('.products__button').on('click', function() {
         $('.products__btn').toggleClass('list');
     });
 
